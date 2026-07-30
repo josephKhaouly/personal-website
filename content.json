@@ -1,0 +1,106 @@
+{
+  "_readme": "This is the single source of truth for the site. To use it without any build step, rename to content.js and prepend 'window.SITE = ' (see SETUP.md). Editing this file is the ONLY thing you ever need to do to update the site.",
+
+  "meta": {
+    "location": "Amsterdam, NL",
+    "focus": "Focus — DACH · EU",
+    "ref": "Ref. JK-2026",
+    "footerRight": "Amsterdam · DACH · EU"
+  },
+
+  "hero": {
+    "name": "Joseph<br>Khaouly",
+    "role": ["CFO", "Commercial Director", "Applied-AI Strategist"],
+    "valueProp": "Leadership at the intersection of <b>finance, strategy and applied AI</b> — for complex, high-stakes environments, from global multinationals to ambitious SMEs with a vision worth backing.",
+    "status": "Open to top-management, executive & advisory mandates — EU / DACH",
+    "portraitAlt": "AMSTERDAM"
+  },
+
+  "cvUrl": "assets/Joseph-Khaouly-Executive-Dossier.pdf",
+
+  "figures": [
+    { "value": "10",  "unit": "+ yrs", "label": "C-suite & board",     "note": "Progressive financial leadership across four markets." },
+    { "value": "$500","unit": "M+",    "label": "Turnover platform",    "note": "Commercial command at Julius Berger Nigeria, Region West." },
+    { "value": "$75", "unit": "M",     "label": "JV negotiated",        "note": "Co-led negotiations — 232-unit tower, Eko Atlantic City." },
+    { "value": "7",   "unit": "cos.",  "label": "Group centralised",    "note": "Finance, IT, Tax, HR & procurement, as de-facto group CFO." },
+    { "value": "+60", "unit": "%",     "label": "Net profit growth",    "note": "Kept a hotel profitable through COVID on one anchor client." },
+    { "value": "−15", "unit": "%",     "label": "Overheads cut",        "note": "Value-engineering across Tier-1 infrastructure delivery." },
+    { "value": "1",   "unit": "bond",  "label": "FMDQ market",          "note": "Structured and registered a corporate bond programme through to Nigeria's FMDQ market." },
+    { "value": "4",   "unit": "langs", "label": "AR · FR · EN · ES",    "note": "Native Arabic & French; native-level English." }
+  ],
+
+  "about": {
+    "lead": "A decade running the numbers behind West Africa's largest construction and infrastructure — <em>now working where AI, strategy and finance meet.</em>",
+    "body": [
+      "Joseph Khaouly is a finance executive who effectively served as holding-company CFO of a diversified Lagos investor group — across heavy civil engineering, façade engineering, energy trading, catering, coal mining and a luxury hotel — long before he moved to Julius Berger Nigeria, a construction multinational roughly twenty times that group's scale.",
+      "He has centralised finance across seven companies, structured and registered a corporate bond programme on Nigeria's FMDQ market, co-led negotiations of a $75M residential joint venture, and advised a group chairman directly on capital allocation and strategy.",
+      "In 2025 he relocated to Amsterdam and made a deliberate pivot: formalising a second discipline in applied AI through Oxford's Saïd Business School and UT Austin's McCombs School — a technical complement to his HEC Liège finance training, not a gloss on it."
+    ],
+    "chips": ["Corporate finance", "JV & capital structuring", "International tax", "Turnaround", "FIDIC contracting", "Applied AI / ML", "AI governance", "SAP FICO"]
+  },
+
+  "track": [
+    { "when": "2023 — 2025", "role": "Senior Commercial Manager", "org": "Julius Berger Nigeria Plc", "place": "Lagos · Benin Rep.",
+      "detail": "Commercial strategy and financial control for Region West infrastructure (turnover ~$500M+). Helped stand up the company's new Benin Republic branch; cut project overheads 15% through value-engineering." },
+    { "when": "2019 — 2023", "role": "Personal Advisor to the Chairman & Group CFO", "org": "Diversified investor group", "place": "Lagos, NG",
+      "detail": "Co-led negotiations on the $75M Signature Tower JV (232 apartments), Eko Atlantic City. Designed centralised shared services across seven companies; advised on portfolio, asset sales and capital budgeting." },
+    { "when": "2016 — 2023", "role": "CFO & Director — multi-sector portfolio", "org": "Ranjy / RMCK / M&G / Avenue Suites", "place": "Lagos, NG",
+      "detail": "Treasury, bank facilities and the structuring of a corporate bond programme to Nigeria's FMDQ market, across heavy civil, façade, energy and catering. As MD & CFO of a luxury hotel, doubled turnover and grew net profit 60% through COVID." },
+    { "when": "2014 — 2016", "role": "Financial Controller", "org": "Albert Khaouly CPA", "place": "Beirut, LB",
+      "detail": "Restructured the practice into accounting, audit, tax and advisory verticals; led feasibility studies, valuations and business plans for SME clients." }
+  ],
+
+  "projects": [
+    { "name": "REA — Assistant", "status": "soon", "url": "https://rea.josephkhaouly.com", "urlLabel": "rea.josephkhaouly.com",
+      "tagline": "REA (Real Estate Assistant) tracks the financial performance of the property you own and runs the rent billing for the property you manage on behalf of others. The two are computed in complete isolation, so managed assets never distort the returns on your own capital.",
+      "meth": [
+        { "k": "Domain", "v": "Real estate management · Investment performance analytics" },
+        { "k": "Method", "v": "Isolated ledgers per asset class, with per-transaction FX-rate capture" },
+        { "k": "Edge",   "v": "Owned and managed assets are never mixed; every cross-currency entry is rate-verified at the transaction date" }
+      ], "cta": "Final development stage" },
+
+    { "name": "CFO Flash", "status": "soon", "url": "https://cfo.josephkhaouly.com", "urlLabel": "cfo.josephkhaouly.com",
+      "tagline": "CFO Flash turns a company's period financials — P&L, budget-vs-actual, balance sheet — into a four-section decision memo (health, risks, decisions, questions) in seconds. It runs entirely on your own server, so data never leaves the building, and every number comes from deterministic, auditable calculations, not AI guesswork.",
+      "meth": [
+        { "k": "Domain", "v": "Corporate finance · Executive intelligence" },
+        { "k": "Method", "v": "Deterministic accounting engine + thin LLM narration layer — the engine computes, the model only writes prose" },
+        { "k": "Edge",   "v": "Auditable, not hallucinated — covenant-aware, runs on your own infrastructure, swappable LLM" }
+      ], "cta": "Final testing phase" }
+  ],
+
+  "roadmap": [
+    { "q": "Now",      "title": "AI-finance advisory",  "stage": "Formalising",              "text": "A standing advisory practice for multinationals deploying AI across finance and operations in emerging markets." },
+    { "q": "Next",     "title": "S2S Integrity Agent",  "stage": "Strategic planning phase",  "text": "A digital auditor that reconciles BOQ, SAP procurement and daily site logs into a live cost-and-schedule twin — catching material leakage and recalculating the critical path the moment site progress is logged." },
+    { "q": "Research", "title": "Doctoral work",        "stage": "Ongoing",                   "text": "Applied research on data-driven decision systems in corporate finance — the rigorous foundation under the ventures." }
+  ],
+
+  "cv": {
+    "headline": "The full picture, in one document.",
+    "blurb": "A concise executive résumé — mandates, deals and credentials, formatted for a fast read by a search committee.",
+    "fineprint": "PDF · updated 2026",
+    "education_ai": [
+      { "main": "AI Foundations for Business Professionals", "sub": "Saïd Business School, University of Oxford", "year": "2026" },
+      { "main": "PGP — AI/ML Business Applications",         "sub": "UT Austin · McCombs School of Business",     "year": "2025–26" }
+    ],
+    "education_academic": [
+      { "main": "MSc Business Science — Financial Analysis & Audit", "sub": "HEC Liège, Belgium", "year": "2011–14" },
+      { "main": "MSc Business Science — Didactics",                  "sub": "HEC Liège, Belgium", "year": "2014" },
+      { "main": "BSc Accountancy — Management", "sub": "Haute École de la Province de Liège · 2nd in class, Citizen Award", "year": "2008–11" }
+    ],
+    "skills": ["Corporate finance", "Liquidity mgmt", "JV structuring", "Int'l tax", "Feasibility & valuation", "SAP FICO", "Financial modeling", "Predictive modeling"],
+    "languages": [
+      { "main": "Arabic",  "sub": "Native" },
+      { "main": "French",  "sub": "Native" },
+      { "main": "English", "sub": "Native-level (C2)" },
+      { "main": "Spanish", "sub": "Basic (A1)" }
+    ]
+  },
+
+  "contact": {
+    "lede": "For executive search, board or advisory conversations. The fastest route is email or LinkedIn — every message is read personally.",
+    "email": "hello@yourdomain.com",
+    "linkedin": "www.linkedin.com/in/joseph-khaouly-76547584",
+    "linkedinUrl": "https://www.linkedin.com/in/joseph-khaouly-76547584",
+    "location": "Amsterdam, Netherlands"
+  }
+}

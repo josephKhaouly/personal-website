@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Joseph Khaouly — CFO · Commercial Director · Applied-AI Strategist</title>
+<meta name="description" content="Group-CFO-grade financial leadership for complex markets, paired with hands-on applied AI. Amsterdam · DACH · EU." />
+
+<!-- ══════════════════════ FAVICON ══════════════════════ -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2314181B'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='27' fill='%23E9EAE4' text-anchor='middle'%3EJK%3C/text%3E%3C/svg%3E" />
+
+<!-- ══════════════ SOCIAL PREVIEW (update URLs once the domain is live) ══════════════ -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Joseph Khaouly — CFO · Commercial Director · Applied-AI Strategist" />
+<meta property="og:description" content="Group-CFO-grade financial leadership for complex markets, paired with hands-on applied AI. Amsterdam · DACH · EU." />
+<meta property="og:image" content="https://yourdomain.com/assets/portrait.png" />
+<meta property="og:url" content="https://yourdomain.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Joseph Khaouly — CFO · Commercial Director · Applied-AI Strategist" />
+<meta name="twitter:description" content="Group-CFO-grade financial leadership for complex markets, paired with hands-on applied AI. Amsterdam · DACH · EU." />
+<meta name="twitter:image" content="https://yourdomain.com/assets/portrait.png" />
+
+<!-- ══════════════════════ FONTS ══════════════════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+/* ═══════════════════════════════════════════════════════════
+   DESIGN SYSTEM  —  "Executive Prospectus"
+   Palette: cool bone paper, slate ink, deep petrol accent.
+   Type: Newsreader (display serif) · Schibsted Grotesk (UI/body)
+         · IBM Plex Mono (figures, labels, coordinates)
+   ═══════════════════════════════════════════════════════════ */
+:root{
+  --paper:#E9EAE4;      /* cool bone background       */
+  --paper-2:#F4F5F0;    /* raised panels / cards      */
+  --ink:#14181B;        /* near-black slate           */
+  --ink-soft:#2A2F33;
+  --muted:#63686C;      /* secondary text             */
+  --line:#C7C9C1;       /* hairlines                  */
+  --line-soft:#D8DAD2;
+  --accent:#1C4E43;     /* deep petrol — links/marks  */
+  --accent-ink:#0F3730;
+  --live:#2E7D66;       /* status dot                 */
+  --maxw:1200px;
+  --gutter:clamp(20px,5vw,64px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Schibsted Grotesk",system-ui,sans-serif;
+  font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+::selection{background:var(--accent);color:var(--paper)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* ── type roles ── */
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-weight:500;letter-spacing:.04em}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;
+  font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.serif{font-family:"Newsreader",Georgia,serif;font-weight:400}
+.serif-it{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:400}
+
+/* ── layout shell ── */
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
+.rule{height:1px;background:var(--line);border:0}
+section{position:relative}
+
+/* ═════════ NAV ═════════ */
+.nav{position:fixed;inset:0 0 auto 0;z-index:60;
+  background:color-mix(in srgb,var(--paper) 82%,transparent);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
+.nav.stuck{border-color:var(--line);background:color-mix(in srgb,var(--paper) 94%,transparent)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:14px var(--gutter);
+  display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:baseline;gap:10px;font-weight:600;letter-spacing:-.01em}
+.brand .mono{font-size:11px;color:var(--muted);font-weight:500;letter-spacing:.14em}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{font-size:13.5px;color:var(--muted);transition:color .2s;position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-5px;height:1px;width:0;
+  background:var(--ink);transition:width .25s var(--ease)}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{border:1px solid var(--ink);border-radius:2px;padding:8px 16px;
+  font-size:13px;font-weight:500;color:var(--ink);transition:.2s}
+.nav-cta:hover{background:var(--ink);color:var(--paper)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:22px;height:1.5px;background:var(--ink);margin:5px 0;transition:.3s}
+
+/* ═════════ HERO / COVER ═════════ */
+.hero{padding-top:132px;padding-bottom:0}
+.cover-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+  padding-bottom:22px;border-bottom:1px solid var(--line)}
+.cover-meta span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:clamp(28px,5vw,72px);
+  align-items:end;padding-top:clamp(34px,5vw,60px)}
+.hero-name{font-family:"Newsreader",serif;font-weight:400;
+  font-size:clamp(52px,9vw,116px);line-height:.92;letter-spacing:-.02em}
+.hero-name em{font-style:italic}
+.hero-role{margin-top:26px;font-size:clamp(17px,2.1vw,21px);font-weight:500;
+  letter-spacing:-.01em;color:var(--ink)}
+.hero-role .sep{color:var(--line);margin:0 10px}
+.hero-vp{margin-top:22px;max-width:46ch;font-size:clamp(17px,2vw,20px);
+  line-height:1.5;color:var(--ink-soft)}
+.hero-vp b{font-weight:600;color:var(--ink)}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:26px;
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.03em;color:var(--accent-ink)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--live);position:relative}
+.dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;
+  border:1px solid var(--live);opacity:.5;animation:pulse 2.4s infinite}
+@keyframes pulse{0%{transform:scale(.7);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{opacity:0}}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-size:14.5px;font-weight:500;
+  padding:13px 22px;border-radius:2px;transition:.22s var(--ease);cursor:pointer;border:1px solid var(--ink)}
+.btn-solid{background:var(--ink);color:var(--paper)}
+.btn-solid:hover{background:var(--accent-ink);border-color:var(--accent-ink);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn .arw{transition:transform .22s var(--ease)}
+.btn:hover .arw{transform:translate(3px,-3px)}
+
+.portrait-frame{position:relative;aspect-ratio:3/4;border:1px solid var(--line);
+  background:var(--paper-2);overflow:hidden}
+.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:center 25%;filter:grayscale(.12) contrast(1.02)}
+.portrait-frame .tag{position:absolute;left:0;bottom:0;right:0;
+  padding:10px 14px;display:flex;justify-content:space-between;
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--paper);
+  background:linear-gradient(transparent,rgba(15,19,22,.72))}
+.mono-fallback{width:100%;height:100%;display:grid;place-items:center;
+  font-family:"Newsreader",serif;font-size:clamp(70px,12vw,140px);color:var(--line);background:var(--paper-2)}
+
+/* ═════════ SECTION HEADER ═════════ */
+.sec{padding-block:clamp(64px,9vw,120px)}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:baseline;
+  padding-bottom:36px;margin-bottom:clamp(36px,5vw,56px);border-bottom:1px solid var(--line)}
+.sec-idx{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;
+  letter-spacing:.1em;color:var(--accent)}
+.sec-title{font-family:"Newsreader",serif;font-size:clamp(28px,4.4vw,44px);
+  line-height:1.05;letter-spacing:-.015em}
+.sec-sub{grid-column:2;max-width:56ch;color:var(--muted);margin-top:14px;font-size:16px}
+
+/* ═════════ FIGURES LEDGER (signature) ═════════ */
+.ledger{display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--ink);border-left:1px solid var(--line)}
+.fig{border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:26px 22px 22px;position:relative;background:var(--paper);
+  transition:background .3s}
+.fig:hover{background:var(--paper-2)}
+.fig-k{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted)}
+.fig-v{font-family:"Newsreader",serif;font-size:clamp(34px,4.4vw,52px);
+  line-height:1;margin-top:20px;letter-spacing:-.02em;display:flex;align-items:baseline;gap:6px}
+.fig-v .unit{font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:500;
+  letter-spacing:0;color:var(--accent);align-self:flex-start;margin-top:4px}
+.fig-note{margin-top:14px;font-size:13.5px;line-height:1.4;color:var(--ink-soft);max-width:22ch}
+
+/* ═════════ ABOUT / MANDATE ═════════ */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px)}
+.about-lead{font-family:"Newsreader",serif;font-size:clamp(21px,2.6vw,28px);
+  line-height:1.34;letter-spacing:-.01em}
+.about-lead em{font-style:italic;color:var(--accent-ink)}
+.about-body p{margin-bottom:17px;color:var(--ink-soft);font-size:16.5px}
+.about-body p:last-child{margin-bottom:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chip{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.05em;
+  padding:6px 12px;border:1px solid var(--line);border-radius:2px;color:var(--ink-soft)}
+
+/* ═════════ TRACK RECORD ═════════ */
+.track{display:grid;gap:0;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:150px 1fr auto;gap:24px;align-items:baseline;
+  padding:26px 0;border-bottom:1px solid var(--line);transition:padding-left .3s var(--ease)}
+.row:hover{padding-left:10px}
+.row .when{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--muted);letter-spacing:.02em}
+.row .what h4{font-family:"Newsreader",serif;font-weight:500;font-size:21px;letter-spacing:-.01em}
+.row .what .org{color:var(--accent);font-weight:500;font-size:15px;margin-top:3px}
+.row .what p{color:var(--muted);font-size:15px;margin-top:9px;max-width:62ch}
+.row .place{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--muted);text-align:right;white-space:nowrap}
+
+/* ═════════ PROJECTS ═════════ */
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{border:1px solid var(--line);background:var(--paper-2);padding:30px;
+  display:flex;flex-direction:column;position:relative;overflow:hidden;
+  transition:.3s var(--ease)}
+.card:hover{border-color:var(--ink);transform:translateY(-3px)}
+.card::before{content:"";position:absolute;left:0;top:0;height:2px;width:0;
+  background:var(--accent);transition:width .4s var(--ease)}
+.card:hover::before{width:100%}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.pill{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;padding:5px 10px;border-radius:2px;white-space:nowrap}
+.pill.active{background:var(--accent);color:var(--paper)}
+.pill.done{border:1px solid var(--line);color:var(--muted)}
+.pill.soon{border:1px dashed var(--line);color:var(--muted)}
+.card h3{font-family:"Newsreader",serif;font-size:29px;font-weight:500;
+  letter-spacing:-.01em;margin-top:22px}
+.card .tagline{color:var(--ink-soft);margin-top:10px;font-size:16px;line-height:1.5;flex:0 0 auto}
+.card .meth{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);
+  display:flex;flex-direction:column;gap:9px}
+.card .meth .kv{display:flex;gap:12px;font-size:14px}
+.card .meth .kv .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--muted);min-width:78px;padding-top:2px}
+.card .meth .kv .v{color:var(--ink-soft)}
+.card-foot{margin-top:auto;padding-top:22px;display:flex;align-items:center;
+  justify-content:space-between;gap:12px}
+.card-link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--ink)}
+.card-link .mono{font-size:12px;color:var(--muted)}
+.card-link .arw{transition:transform .22s var(--ease)}
+.card:hover .card-link .arw{transform:translate(3px,-3px)}
+.card-link.disabled{color:var(--muted);pointer-events:none}
+
+/* ═════════ ROADMAP ═════════ */
+.road{display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(24px,3.5vw,48px)}
+.road-item{border-top:1px solid var(--ink);
+  padding:28px 2px 30px;min-height:200px;display:flex;flex-direction:column}
+.road-item .q{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent)}
+.road-item h4{font-family:"Newsreader",serif;font-size:23px;font-weight:500;margin-top:16px;letter-spacing:-.01em}
+.road-item p{color:var(--muted);font-size:14.5px;margin-top:12px;line-height:1.5}
+.road-item .stage{margin-top:auto;padding-top:18px;font-family:"IBM Plex Mono",monospace;
+  font-size:11px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+
+/* ═════════ CV / CREDENTIALS ═════════ */
+.cv{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,64px);align-items:start}
+.cv-cta{border:1px solid var(--ink);background:var(--ink);color:var(--paper);
+  padding:clamp(28px,4vw,42px);border-radius:2px;position:sticky;top:100px}
+.cv-cta .eyebrow{color:color-mix(in srgb,var(--paper) 62%,transparent)}
+.cv-cta h3{font-family:"Newsreader",serif;font-size:clamp(26px,3.4vw,36px);
+  font-weight:400;line-height:1.1;margin:18px 0 14px;color:var(--paper)}
+.cv-cta p{color:color-mix(in srgb,var(--paper) 74%,transparent);font-size:15px;margin-bottom:26px}
+.cv-cta .btn{border-color:var(--paper);color:var(--ink);background:var(--paper);width:100%;justify-content:center}
+.cv-cta .btn:hover{background:transparent;color:var(--paper)}
+.cv-cta .fineprint{margin-top:16px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.08em;color:color-mix(in srgb,var(--paper) 52%,transparent);text-transform:uppercase}
+.cred-block{margin-bottom:30px}
+.cred-block .lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);padding-bottom:12px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+.cred{display:flex;justify-content:space-between;gap:16px;padding:9px 0;font-size:15.5px}
+.cred .c-main{color:var(--ink)}
+.cred .c-main span{color:var(--muted);font-size:14px;display:block;margin-top:2px}
+.cred .c-year{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);white-space:nowrap}
+.skillrow{display:flex;flex-wrap:wrap;gap:7px;margin-top:4px}
+.skillrow .chip{font-size:11px}
+
+/* ═════════ CONTACT ═════════ */
+.contact{background:var(--ink);color:var(--paper);margin-top:clamp(40px,6vw,90px)}
+.contact .wrap{padding-block:clamp(60px,9vw,110px)}
+.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(36px,6vw,80px)}
+.contact h2{font-family:"Newsreader",serif;font-size:clamp(34px,5.5vw,60px);
+  font-weight:400;line-height:1.02;letter-spacing:-.02em;color:var(--paper)}
+.contact h2 em{font-style:italic}
+.contact .lede{color:color-mix(in srgb,var(--paper) 76%,transparent);max-width:44ch;margin-top:22px;font-size:17px}
+.contact-lines{margin-top:34px;display:flex;flex-direction:column;gap:2px}
+.cline{display:flex;justify-content:space-between;align-items:center;gap:16px;
+  padding:18px 0;border-top:1px solid rgba(233,234,228,.16);transition:padding-left .25s var(--ease)}
+.cline:last-child{border-bottom:1px solid rgba(233,234,228,.16)}
+.cline:hover{padding-left:8px}
+.cline .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:color-mix(in srgb,var(--paper) 55%,transparent)}
+.cline .v{font-size:17px;color:var(--paper);display:inline-flex;align-items:center;gap:9px}
+.cline .v .arw{transition:transform .22s var(--ease);opacity:.6}
+.cline:hover .v .arw{transform:translate(3px,-3px);opacity:1}
+/* form */
+.form{background:color-mix(in srgb,var(--paper) 6%,transparent);
+  border:1px solid rgba(233,234,228,.16);border-radius:3px;padding:clamp(24px,3vw,34px)}
+.form .eyebrow{color:color-mix(in srgb,var(--paper) 58%,transparent)}
+.field{margin-top:18px}
+.field label{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;
+  letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--paper) 60%,transparent);margin-bottom:8px}
+.field input,.field textarea{width:100%;background:transparent;
+  border:1px solid rgba(233,234,228,.22);border-radius:2px;padding:12px 13px;
+  color:var(--paper);font-family:inherit;font-size:15px;transition:border-color .2s}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--paper)}
+.field textarea{resize:vertical;min-height:90px}
+.form .btn{margin-top:20px;width:100%;justify-content:center;background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.form .btn:hover{background:transparent;color:var(--paper)}
+.form-note{margin-top:14px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.05em;color:color-mix(in srgb,var(--paper) 48%,transparent)}
+
+/* ═════════ FOOTER ═════════ */
+.foot{border-top:1px solid rgba(233,234,228,.16)}
+.foot .wrap{padding-block:26px;display:flex;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;font-family:"IBM Plex Mono",monospace;font-size:11px;
+  letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--paper) 52%,transparent)}
+
+/* ═════════ REVEAL ═════════ */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ═════════ RESPONSIVE ═════════ */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .portrait-frame{max-width:340px;order:-1}
+  .about-grid,.cv,.contact-grid{grid-template-columns:1fr}
+  .cv-cta{position:static;order:-1}
+  .ledger{grid-template-columns:repeat(2,1fr)}
+  .proj-grid{grid-template-columns:1fr}
+  .road{grid-template-columns:1fr;gap:0}
+  .road-item{padding:26px 0 28px;min-height:0}
+  .road-item:first-child{border-top:0;padding-top:4px}
+  .road-item:last-child{border-bottom:1px solid var(--ink)}
+  .sec-head{grid-template-columns:1fr}
+  .sec-sub{grid-column:1}
+  .row{grid-template-columns:1fr;gap:6px}
+  .row .place{text-align:left}
+  .nav-links{display:none}
+  .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;
+    flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px var(--gutter)}
+  .nav-links.open a{padding:14px 0;border-bottom:1px solid var(--line-soft);width:100%}
+  .nav-links.open a::after{display:none}
+  .nav-links.open .nav-cta{border:1px solid var(--ink);text-align:center;margin:12px 0}
+  .burger{display:block}
+}
+@media(max-width:560px){
+  .ledger{grid-template-columns:1fr}
+  .cover-meta{flex-direction:column;gap:6px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ═════════ NAV ═════════ -->
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <a href="#top" class="brand">Joseph Khaouly<span class="mono" id="brandTag"></span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#track">Track record</a>
+      <a href="#ventures">AI Lab</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#cv">CV</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ═════════ HERO ═════════ -->
+<header class="hero wrap" id="top">
+  <div class="cover-meta reveal">
+    <span id="metaLoc"></span>
+    <span id="metaFocus"></span>
+    <span id="metaRef"></span>
+  </div>
+  <div class="hero-grid">
+    <div>
+      <h1 class="hero-name reveal" id="heroName"></h1>
+      <p class="hero-role reveal" id="heroRole"></p>
+      <p class="hero-vp reveal" id="heroVP"></p>
+      <div class="status reveal"><span class="dot"></span><span id="heroStatus"></span></div>
+      <div class="hero-actions reveal">
+        <a class="btn btn-solid" id="ctaCV">Download dossier <span class="arw">↗</span></a>
+        <a class="btn btn-ghost" href="#contact">Discreet inquiry</a>
+      </div>
+    </div>
+    <div class="portrait-frame reveal">
+      <img id="portrait" alt="Portrait of Joseph Khaouly"
+           onerror="this.outerHTML='<div class=&quot;mono-fallback&quot;>JK</div>'" />
+      <div class="tag"><span id="portName">JOSEPH KHAOULY</span><span id="portLoc">AMSTERDAM</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ═════════ AT A GLANCE (ledger) ═════════ -->
+<section class="sec wrap" id="glance">
+  <div class="sec-head reveal">
+    <span class="sec-idx">I</span>
+    <div><h2 class="sec-title">At a glance</h2>
+    <p class="sec-sub">A decade of financial command, in figures. Every number below is drawn from mandates held and deals led.</p></div>
+  </div>
+  <div class="ledger reveal" id="ledger"></div>
+</section>
+
+<!-- ═════════ ABOUT / MANDATE ═════════ -->
+<section class="sec wrap" id="about">
+  <div class="sec-head reveal">
+    <span class="sec-idx">II</span>
+    <div><h2 class="sec-title">About</h2></div>
+  </div>
+  <div class="about-grid">
+    <p class="about-lead reveal" id="aboutLead"></p>
+    <div class="about-body reveal" id="aboutBody"></div>
+  </div>
+  <div class="chips reveal" id="aboutChips"></div>
+</section>
+
+<!-- ═════════ TRACK RECORD ═════════ -->
+<section class="sec wrap" id="track">
+  <div class="sec-head reveal">
+    <span class="sec-idx">III</span>
+    <div><h2 class="sec-title">Track record</h2>
+    <p class="sec-sub">Selected roles across infrastructure, energy, hospitality and advisory in emerging and frontier markets.</p></div>
+  </div>
+  <div class="track reveal" id="track-list"></div>
+</section>
+
+<!-- ═════════ VENTURES ═════════ -->
+<section class="sec wrap" id="ventures">
+  <div class="sec-head reveal">
+    <span class="sec-idx">IV</span>
+    <div><h2 class="sec-title">Joseph Khaouly AI Lab</h2>
+    <p class="sec-sub">Designing practical AI decision-support systems that transform complex business information into confident executive decisions.</p></div>
+  </div>
+  <div class="proj-grid reveal" id="proj-list"></div>
+</section>
+
+<!-- ═════════ ROADMAP ═════════ -->
+<section class="sec wrap" id="roadmap">
+  <div class="sec-head reveal">
+    <span class="sec-idx">V</span>
+    <div><h2 class="sec-title">Roadmap</h2>
+    <p class="sec-sub">Where the work is heading next — research and ventures in build.</p></div>
+  </div>
+  <div class="road reveal" id="road-list"></div>
+</section>
+
+<!-- ═════════ CV & CREDENTIALS ═════════ -->
+<section class="sec wrap" id="cv">
+  <div class="sec-head reveal">
+    <span class="sec-idx">VI</span>
+    <div><h2 class="sec-title">CV &amp; credentials</h2>
+    <p class="sec-sub">A quick-scan of education and capability. Full detail in the downloadable executive dossier.</p></div>
+  </div>
+  <div class="cv">
+    <div class="cv-cta reveal">
+      <p class="eyebrow">Executive dossier</p>
+      <h3 id="cvHeadline"></h3>
+      <p id="cvBlurb"></p>
+      <a class="btn" id="ctaCV2" download>Download résumé (PDF) <span class="arw">↓</span></a>
+      <p class="fineprint" id="cvFine"></p>
+    </div>
+    <div class="reveal">
+      <div class="cred-block"><div class="lbl">Executive education — AI &amp; enterprise</div><div id="credAI"></div></div>
+      <div class="cred-block"><div class="lbl">Academic degrees</div><div id="credAcad"></div></div>
+      <div class="cred-block"><div class="lbl">Capability</div><div class="skillrow" id="credSkills"></div></div>
+      <div class="cred-block"><div class="lbl">Languages</div><div id="credLang"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ CONTACT ═════════ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="eyebrow" style="color:color-mix(in srgb,var(--paper) 56%,transparent);margin-bottom:18px">Contact</p>
+        <h2>Let's speak, <em>discreetly.</em></h2>
+        <p class="lede" id="contactLede"></p>
+        <div class="contact-lines" id="contactLines"></div>
+      </div>
+      <div class="form reveal">
+        <p class="eyebrow">Direct inquiry</p>
+        <div class="field"><label>Name</label><input id="fName" type="text" placeholder="Your name" /></div>
+        <div class="field"><label>Organisation</label><input id="fOrg" type="text" placeholder="Firm / mandate" /></div>
+        <div class="field"><label>Email</label><input id="fEmail" type="email" placeholder="you@firm.com" /></div>
+        <div class="field"><label>Note</label><textarea id="fMsg" placeholder="Context of the conversation"></textarea></div>
+        <a class="btn" id="formSend">Send inquiry <span class="arw">↗</span></a>
+        <p class="form-note" id="formNote">This will open in your email application · nothing is stored on this site.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><div class="wrap">
+    <span id="footL">© Joseph Khaouly</span>
+    <span id="footR">Amsterdam · DACH · EU</span>
+  </div></div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════
+     ▓▓▓  EDIT ONLY THIS BLOCK  ▓▓▓
+     All copy, figures, projects, roadmap and CV live in SITE below.
+     Change text here — never touch the HTML above. To move a project
+     from "coming soon" to "completed": cut it from SITE.roadmap and
+     paste it into SITE.projects with status:"done" or "active".
+     (To externalise: save this object as content.js as
+      `window.SITE = {…}` and load it with <script src="content.js">.)
+     ════════════════════════════════════════════════════════════════ -->
+<script>
+const SITE = {
+  meta:{
+    location:"Amsterdam, NL",
+    focus:"Focus — DACH · EU",
+    ref:"Ref. JK-2026",
+    footerRight:"Amsterdam · DACH · EU"
+  },
+  hero:{
+    name:"Joseph<br>Khaouly",              // <br> allowed for line break
+    role:["Board-level Executive","Strategy, Finance & AI"],
+    valueProp:"Combining executive leadership, business strategy and practical AI to improve decision-making and business performance in complex, high-stakes environments.",
+    status:"Open to meaningful discussions, partnerships & attractive opportunities",
+    portraitAlt:"AMSTERDAM"
+  },
+  cvUrl:"assets/Joseph-Khaouly-Executive-Dossier.pdf",  // drop your PDF here
+
+  // ── SIGNATURE: the figures ledger ──
+  figures:[
+    {value:"10", unit:"+ yrs", label:"C-suite & board", note:"Progressive financial leadership across four markets."},
+    {value:"$500", unit:"M+", label:"Turnover platform", note:"Commercial command at Julius Berger Nigeria, Region West."},
+    {value:"$75", unit:"M", label:"JV negotiated", note:"Co-led negotiations — 232-unit tower, Eko Atlantic City."},
+    {value:"7", unit:"cos.", label:"Group centralised", note:"Finance, IT, Tax, HR & procurement, as de-facto group CFO."},
+    {value:"+60", unit:"%", label:"Net profit growth", note:"Kept a hotel profitable through COVID on one anchor client."},
+    {value:"−15", unit:"%", label:"Overheads cut", note:"Value-engineering across Tier-1 infrastructure delivery."},
+    {value:"1", unit:"bond", label:"FMDQ market", note:"Structured and registered a corporate bond programme through to Nigeria's FMDQ market."},
+    {value:"4", unit:"langs", label:"AR · FR · EN · ES", note:"Native Arabic & French; native-level English."}
+  ],
+
+  about:{
+    lead:"Twelve years making board-level decisions in complex businesses — <em>now designing AI systems that help executives make better ones.</em>",
+    body:[
+      "I am a board-level finance and commercial executive with 12 years of leadership across infrastructure, heavy engineering, energy, hospitality and investment businesses in Europe, the Middle East and West Africa. Throughout my career, I have been trusted to make high-stakes decisions involving capital allocation, commercial strategy, restructuring and business transformation in complex, multi-entity organisations.",
+      "My experience extends well beyond traditional finance leadership. I have negotiated major joint ventures, structured corporate financing, centralised shared services across diversified groups, led commercial strategy for one of Africa's largest construction companies, and advised investors and business owners on decisions that shape long-term enterprise value.",
+      "Today, I combine that executive experience with applied artificial intelligence, supported by executive education at Oxford Saïd Business School and UT Austin's McCombs School of Business, to design practical AI-powered decision-support systems for finance, investment and business leadership. Through Joseph Khaouly AI Lab, I develop products that transform complex financial and operational information into clearer insights, faster decisions and better business outcomes.",
+	"I believe artificial intelligence should enhance—not replace—executive judgement. The best decisions still rely on experience, context and leadership. AI simply enables executives to analyse more information, identify opportunities sooner and make better-informed strategic decisions."
+    ],
+    chips:["Corporate finance","JV & capital structuring","International tax","Turnaround","Applied AI / ML","AI governance","SAP"]
+  },
+
+  track:[
+    {when:"2023 — 2025", role:"Senior Commercial Manager", org:"Julius Berger Nigeria Plc", place:"Lagos · Benin Rep.",
+     detail:"Commercial strategy and financial control for Region West infrastructure (turnover ~$500M+). Helped stand up the company's new Benin Republic branch; cut project overheads 15% through value-engineering."},
+    {when:"2019 — 2023", role:"Personal Advisor to the Chairman & Group CFO", org:"Diversified investor group", place:"Lagos, NG",
+     detail:"Co-led negotiations on the $75M Signature Tower JV (232 apartments), Eko Atlantic City. Designed centralised shared services across seven companies; advised on portfolio, asset sales and capital budgeting."},
+    {when:"2016 — 2023", role:"CFO & Director — multi-sector portfolio", org:"Ranjy / RMCK / M&G / Avenue Suites", place:"Lagos, NG",
+     detail:"Treasury, bank facilities and the structuring of a corporate bond programme to Nigeria's FMDQ market, across heavy civil, façade, energy and catering. As MD & CFO of a luxury hotel, doubled turnover and grew net profit 60% through COVID."},
+    {when:"2014 — 2016", role:"Financial Controller", org:"Albert Khaouly CPA", place:"Beirut, LB",
+     detail:"Restructured the practice into accounting, audit, tax and advisory verticals; led feasibility studies, valuations and business plans for SME clients."}
+  ],
+
+  // status: "active" | "done" | "soon"
+  projects:[
+    {name:"REA — Assistant", status:"soon", url:"https://rea.josephkhaouly.com", urlLabel:"rea.josephkhaouly.com",
+     tagline:"REA (Real Estate Assistant) tracks the financial performance of the property you own and runs the rent billing for the property you manage on behalf of others. The two are computed in complete isolation, so managed assets never distort the returns on your own capital.",
+     meth:[
+       {k:"Domain", v:"Real estate management · Investment performance analytics"},
+       {k:"Method", v:"Isolated ledgers per asset class, with per-transaction FX-rate capture"},
+       {k:"Edge", v:"Owned and managed assets are never mixed; every cross-currency entry is rate-verified at the transaction date"}
+     ], cta:"Final development stage"},
+    {name:"CFO Flash", status:"soon", url:"https://cfo.josephkhaouly.com", urlLabel:"cfo.josephkhaouly.com",
+     tagline:"CFO Flash turns a company's period financials — P&L, budget-vs-actual, balance sheet — into a four-section decision memo (health, risks, decisions, questions) in seconds. It runs entirely on your own server, so data never leaves the building, and every number comes from deterministic, auditable calculations, not AI guesswork.",
+     meth:[
+       {k:"Domain", v:"Corporate finance · Executive intelligence"},
+       {k:"Method", v:"Deterministic accounting engine + thin LLM narration layer — the engine computes, the model only writes prose"},
+       {k:"Edge", v:"Auditable, not hallucinated — covenant-aware, runs on your own infrastructure, swappable LLM"}
+     ], cta:"Final testing phase"}
+  ],
+
+  roadmap:[
+    {q:"Now", title:"AI-finance advisory", stage:"Formalising",
+     text:"A standing advisory practice for companies strategizing about AI across finance and operations in diversified markets."},
+    {q:"Next", title:"S2S Integrity Agent", stage:"Strategic planning phase",
+     text:"A digital auditor that reconciles BOQ, SAP procurement and daily site logs into a live cost-and-schedule twin — catching material leakage and recalculating the critical path the moment site progress is logged."},
+    {q:"Research", title:"Doctoral work", stage:"Ongoing",
+     text:"Applied research on data-driven decision systems in corporate finance — the rigorous foundation under the ventures."}
+  ],
+
+  cv:{
+    headline:"The full picture, in one document.",
+    blurb:"A concise executive résumé — mandates, deals and credentials, formatted for a fast read by a search committee.",
+    fineprint:"PDF · updated 2026",
+    education_ai:[
+      {main:"AI Foundations for Business Professionals", sub:"Saïd Business School, University of Oxford", year:"2026"},
+      {main:"PGP — AI/ML Business Applications", sub:"UT Austin · McCombs School of Business", year:"2025–26"}
+    ],
+    education_academic:[
+      {main:"MSc Business Science — Financial Analysis & Audit", sub:"HEC Liège, Belgium", year:"2011–14"},
+      {main:"MSc Business Science — Didactics", sub:"HEC Liège, Belgium", year:"2014"},
+      {main:"BSc Accountancy — Management", sub:"Haute École de la Province de Liège · 2nd in class, Citizen Award", year:"2008–11"}
+    ],
+    skills:["Corporate finance","Liquidity mgmt","JV structuring","Int'l tax","Feasibility & valuation","SAP","Financial modeling","Predictive modeling","SQL","Python","AI/ML"],
+    languages:[
+      {main:"Arabic", sub:"Native"}, {main:"French", sub:"Native"},
+      {main:"English", sub:"Native-level (C2)"}, {main:"Spanish", sub:"Basic (A1)"}
+    ]
+  },
+
+  contact:{
+    lede:"For executive search, board or advisory conversations. The fastest route is email or LinkedIn — every message is read personally.",
+    email:"Joseph@JosephKhaouly.com",
+    linkedin:"www.linkedin.com/in/joseph-khaouly-76547584",
+    linkedinUrl:"https://www.linkedin.com/in/joseph-khaouly-76547584",
+    location:"Amsterdam, Netherlands"
+  }
+};
+
+/* ══════════ RENDER (do not edit below) ══════════ */
+const $=(s,r=document)=>r.querySelector(s), el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;};
+
+// meta + hero
+$("#metaLoc").textContent=SITE.meta.location;
+$("#metaFocus").textContent=SITE.meta.focus;
+$("#metaRef").textContent=SITE.meta.ref;
+$("#footR").textContent=SITE.meta.footerRight;
+$("#heroName").innerHTML=SITE.hero.name;
+$("#heroRole").innerHTML=SITE.hero.role.map(r=>`<span>${r}</span>`).join('<span class="sep">/</span>');
+$("#heroVP").innerHTML=SITE.hero.valueProp;
+$("#heroStatus").textContent=SITE.hero.status;
+$("#portrait").src="assets/portrait.png";
+$("#portLoc").textContent=SITE.hero.portraitAlt;
+$("#ctaCV").href=SITE.cvUrl; $("#ctaCV").setAttribute("download","Joseph-Khaouly-Executive-Dossier.pdf");
+$("#ctaCV2").href=SITE.cvUrl; $("#ctaCV2").setAttribute("download","Joseph-Khaouly-Executive-Dossier.pdf");
+$("#brandTag").textContent="/ Strategy · Finance · AI";
+
+// figures ledger
+$("#ledger").innerHTML=SITE.figures.map(f=>`
+  <div class="fig">
+    <div class="fig-k">${f.label}</div>
+    <div class="fig-v">${f.value}<span class="unit">${f.unit}</span></div>
+    <div class="fig-note">${f.note}</div>
+  </div>`).join('');
+
+// about
+$("#aboutLead").innerHTML=SITE.about.lead;
+$("#aboutBody").innerHTML=SITE.about.body.map(p=>`<p>${p}</p>`).join('');
+$("#aboutChips").innerHTML=SITE.about.chips.map(c=>`<span class="chip">${c}</span>`).join('');
+
+// track record
+$("#track-list").innerHTML=SITE.track.map(r=>`
+  <div class="row">
+    <div class="when">${r.when}</div>
+    <div class="what"><h4>${r.role}</h4><div class="org">${r.org}</div><p>${r.detail}</p></div>
+    <div class="place">${r.place}</div>
+  </div>`).join('');
+
+// projects
+const pill={active:'<span class="pill active">● Active</span>',done:'<span class="pill done">Completed</span>',soon:'<span class="pill soon">Coming soon</span>'};
+$("#proj-list").innerHTML=SITE.projects.map(p=>{
+  const live=p.status!=='soon'&&p.url&&p.url!=='#';
+  return `<article class="card">
+    <div class="card-top">${pill[p.status]||''}<span class="mono" style="font-size:11px;color:var(--muted)">${p.urlLabel||''}</span></div>
+    <h3>${p.name}</h3>
+    <p class="tagline">${p.tagline}</p>
+    <div class="meth">${p.meth.map(m=>`<div class="kv"><span class="k">${m.k}</span><span class="v">${m.v}</span></div>`).join('')}</div>
+    <div class="card-foot">
+      ${live?`<a class="card-link" href="${p.url}" target="_blank" rel="noopener">${p.cta} <span class="arw">↗</span></a>`
+             :`<span class="card-link disabled">${p.cta}</span>`}
+    </div>
+  </article>`;}).join('');
+
+// roadmap
+$("#road-list").innerHTML=SITE.roadmap.map(r=>`
+  <div class="road-item">
+    <div class="q">${r.q}</div>
+    <h4>${r.title}</h4><p>${r.text}</p>
+    <div class="stage">${r.stage}</div>
+  </div>`).join('');
+
+// cv
+$("#cvHeadline").textContent=SITE.cv.headline;
+$("#cvBlurb").textContent=SITE.cv.blurb;
+$("#cvFine").textContent=SITE.cv.fineprint;
+const cred=a=>a.map(c=>`<div class="cred"><div class="c-main">${c.main}<span>${c.sub||''}</span></div><div class="c-year">${c.year||''}</div></div>`).join('');
+$("#credAI").innerHTML=cred(SITE.cv.education_ai);
+$("#credAcad").innerHTML=cred(SITE.cv.education_academic);
+$("#credSkills").innerHTML=SITE.cv.skills.map(s=>`<span class="chip">${s}</span>`).join('');
+$("#credLang").innerHTML=SITE.cv.languages.map(l=>`<div class="cred"><div class="c-main">${l.main}</div><div class="c-year">${l.sub}</div></div>`).join('');
+
+// contact
+$("#contactLede").textContent=SITE.contact.lede;
+$("#contactLines").innerHTML=`
+  <a class="cline" href="mailto:${SITE.contact.email}"><span class="k">Email</span><span class="v">${SITE.contact.email} <span class="arw">↗</span></span></a>
+  <a class="cline" href="${SITE.contact.linkedinUrl}" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span class="v">${SITE.contact.linkedin} <span class="arw">↗</span></span></a>
+  <div class="cline"><span class="k">Based</span><span class="v">${SITE.contact.location}</span></div>`;
+$("#footL").innerHTML=`© ${new Date().getFullYear()} Joseph Khaouly`;
+
+// mailto form, with a clipboard fallback in case the visitor has no mail client configured
+$("#formSend").addEventListener("click",()=>{
+  const n=$("#fName").value,o=$("#fOrg").value,e=$("#fEmail").value,m=$("#fMsg").value;
+  const subject='Inquiry — '+(o||n||'via site');
+  const plain=`Name: ${n}\nOrganisation: ${o}\nEmail: ${e}\n\n${m}`;
+  const note=$("#formNote");
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(`To: ${SITE.contact.email}\nSubject: ${subject}\n\n${plain}`)
+      .then(()=>{ if(note) note.textContent=`If your mail client didn't open, email ${SITE.contact.email} directly — your note has been copied to your clipboard.`; })
+      .catch(()=>{});
+  }
+  window.location.href=`mailto:${SITE.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(plain)}`;
+});
+
+// nav: sticky border, mobile toggle
+const nav=$("#nav");
+addEventListener("scroll",()=>nav.classList.toggle("stuck",scrollY>20));
+$("#burger").addEventListener("click",()=>$("#navLinks").classList.toggle("open"));
+$("#navLinks").addEventListener("click",e=>{if(e.target.tagName==="A")$("#navLinks").classList.remove("open");});
+
+// reveal on scroll
+const io=new IntersectionObserver((es)=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach((n,i)=>{n.style.transitionDelay=(Math.min(i,6)*40)+"ms";io.observe(n);});
+</script>
+</body>
+</html>
