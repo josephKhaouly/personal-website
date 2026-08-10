@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>REA — Real Estate Assistant | About</title>
+<meta name="description" content="REA is a practical real-estate decision-support system that separates the property you own from the property you manage for others — and measures each on its own terms." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.josephkhaouly.com/rea/about" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="REA — Real Estate Assistant" />
+<meta property="og:description" content="Know what your property actually earns you. REA separates owned assets from managed assets, and measures each on its own terms." />
+<meta property="og:url" content="https://www.josephkhaouly.com/rea/about" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="REA — Real Estate Assistant" />
+<meta name="twitter:description" content="Know what your property actually earns you. REA separates owned assets from managed assets, and measures each on its own terms." />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2314181B'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='24' fill='%23E9EAE4' text-anchor='middle'%3EREA%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --paper:#E9EAE4; --paper-2:#F4F5F0; --ink:#14181B; --ink-soft:#2A2F33;
+  --muted:#63686C; --line:#C7C9C1; --line-soft:#D8DAD2;
+  --accent:#1C4E43; --accent-ink:#0F3730;
+  --maxw:880px; --gutter:clamp(20px,5vw,64px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Schibsted Grotesk",system-ui,sans-serif;
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:500;letter-spacing:.04em}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--muted)}
+.serif{font-family:"Newsreader",Georgia,serif;font-weight:400}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
+
+.nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:16px var(--gutter);
+  display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:baseline;gap:9px;font-weight:600;letter-spacing:-.01em;text-decoration:none}
+.brand .mono{font-size:11px;color:var(--muted)}
+.back{font-size:13.5px;color:var(--muted);text-decoration:none;transition:.2s;display:inline-flex;align-items:center;gap:6px}
+.back:hover{color:var(--ink)}
+
+.hero{padding-block:clamp(48px,8vw,84px)}
+.eyebrow-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.hero h1{font-family:"Newsreader",serif;font-weight:400;font-size:clamp(40px,7vw,68px);
+  line-height:1.05;letter-spacing:-.02em}
+.hero .lede{font-family:"Newsreader",serif;font-size:clamp(20px,2.6vw,25px);line-height:1.45;
+  margin-top:20px;max-width:56ch;color:var(--ink-soft)}
+.hero .lede em{font-style:italic;color:var(--accent-ink)}
+.hero p.body{margin-top:20px;max-width:62ch;color:var(--ink-soft);font-size:16.5px}
+.status-row{display:flex;align-items:center;gap:10px;margin-top:30px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.status-row span{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+.sec{padding-block:clamp(48px,7vw,80px);border-top:1px solid var(--line)}
+.sec-idx{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;letter-spacing:.1em;color:var(--accent)}
+.sec h2{font-family:"Newsreader",serif;font-size:clamp(26px,4vw,36px);line-height:1.1;
+  letter-spacing:-.015em;margin-top:14px}
+.sec .intro{font-size:16.5px;color:var(--ink-soft);margin-top:18px;max-width:64ch}
+.sec .intro p{margin-bottom:14px}
+.sec .intro p:last-child{margin-bottom:0}
+.sec .intro strong{color:var(--ink);font-weight:600}
+
+ul.q-list{margin-top:20px;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line-soft)}
+ul.q-list li{list-style:none;padding:13px 0;border-bottom:1px solid var(--line-soft);
+  font-size:16px;color:var(--ink-soft);display:flex;gap:12px}
+ul.q-list li::before{content:"—";color:var(--accent);flex-shrink:0}
+
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
+.track-card{border:1px solid var(--line);background:var(--paper-2);padding:clamp(24px,3vw,32px);
+  display:flex;flex-direction:column}
+.track-card .eyebrow{color:var(--accent)}
+.track-card h3{font-family:"Newsreader",serif;font-size:24px;font-weight:500;margin-top:14px;letter-spacing:-.01em}
+.track-card .sub{margin-top:8px;color:var(--muted);font-size:14.5px;line-height:1.5}
+.track-card ul{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);list-style:none;
+  display:flex;flex-direction:column;gap:9px}
+.track-card ul li{font-size:14.5px;color:var(--ink-soft);display:flex;gap:9px}
+.track-card ul li::before{content:"·";color:var(--accent);font-weight:700}
+.track-card .foot{margin-top:auto;padding-top:18px;font-size:13.5px;color:var(--muted);line-height:1.5}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.04em;
+  padding:7px 12px;border:1px solid var(--line);border-radius:2px;color:var(--ink-soft)}
+
+.audience{margin-top:24px;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line-soft)}
+.audience .row{padding:16px 0;border-bottom:1px solid var(--line-soft);display:flex;gap:18px;align-items:baseline}
+.audience .row b{font-weight:600;min-width:auto}
+.audience .row span{color:var(--ink-soft);font-size:15.5px}
+
+.not-list{margin-top:24px;display:flex;flex-direction:column;gap:22px}
+.not-item .lbl{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--accent-ink)}
+.not-item p{margin-top:8px;color:var(--ink-soft);font-size:15.5px;max-width:62ch}
+.intent{margin-top:24px;padding:22px 24px;background:var(--paper-2);border-left:2px solid var(--accent);
+  font-family:"Newsreader",serif;font-style:italic;font-size:18px;color:var(--ink-soft)}
+
+.cta{background:var(--ink);color:var(--paper);margin-top:clamp(30px,5vw,60px)}
+.cta .wrap{padding-block:clamp(50px,8vw,84px)}
+.cta h2{font-family:"Newsreader",serif;font-size:clamp(28px,4.5vw,44px);font-weight:400;letter-spacing:-.015em}
+.cta .lede{color:color-mix(in srgb,var(--paper) 76%,transparent);max-width:52ch;margin-top:16px;font-size:16.5px}
+.cta-meta{margin-top:30px;display:flex;flex-direction:column;gap:2px}
+.cline{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;
+  border-top:1px solid rgba(233,234,228,.16)}
+.cline:last-child{border-bottom:1px solid rgba(233,234,228,.16)}
+.cline .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:color-mix(in srgb,var(--paper) 55%,transparent)}
+.cline .v{font-size:15.5px;color:var(--paper)}
+.cline a{text-decoration:none;color:var(--paper)}
+.cline a:hover{text-decoration:underline}
+
+.foot{border-top:1px solid var(--line)}
+.foot .wrap{padding-block:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.foot a{color:var(--muted);text-decoration:none}
+.foot a:hover{color:var(--ink)}
+
+@media(max-width:720px){
+  .tracks{grid-template-columns:1fr}
+  .audience .row{flex-direction:column;gap:2px}
+}
+@media(max-width:480px){
+  .brand .mono{display:none}
+  .back{font-size:12.5px;white-space:nowrap}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a href="https://www.josephkhaouly.com" class="brand">REA<span class="mono">/ Real Estate Assistant</span></a>
+    <a href="https://www.josephkhaouly.com/#ventures" class="back">← Joseph Khaouly</a>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <div class="eyebrow-row">
+    <span class="eyebrow">REA — Real Estate Assistant</span>
+    <span class="eyebrow">Beta testing</span>
+  </div>
+  <h1>Know what your property<br>actually earns you.</h1>
+  <p class="lede">REA is a practical real-estate decision-support system designed to help property owners and managers understand performance, monitor cash flow and make <em>better-informed decisions</em> about the assets they manage.</p>
+  <p class="body">It brings property performance, income, expenses and rent collection into one structured view — while keeping your own properties completely separate from properties you manage on behalf of others.</p>
+  <div class="status-row"><span class="dot"></span><span>Operated from the EU · Free to use</span></div>
+</header>
+
+<hr class="rule" />
+
+<section class="sec wrap">
+  <span class="sec-idx">I</span>
+  <h2>What is REA?</h2>
+  <div class="intro">
+    <p>Property ownership is not simply about collecting rent. The real questions are:</p>
+  </div>
+  <ul class="q-list">
+    <li>Is the property actually generating an adequate return?</li>
+    <li>How much cash is it producing?</li>
+    <li>What have I really invested in the asset?</li>
+    <li>What is outstanding or overdue?</li>
+    <li>How is the property performing over time?</li>
+    <li>Is the asset still delivering the return I expect?</li>
+    <li>What happens if I change the assumptions?</li>
+  </ul>
+  <div class="intro" style="margin-top:26px">
+    <p>REA brings the financial information needed to answer these questions into one place. For properties you own, REA measures performance using the capital you have actually invested, including acquisition costs, and tracks the resulting cash flows and returns. For properties you manage for others, it focuses on the management ledger — rent collection, outstanding balances, fees and the owner's net position — without treating someone else's money as your own.</p>
+    <p><strong>The principle is simple: the economics of owning an asset and managing someone else's asset are not the same, so REA does not treat them as the same.</strong></p>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">II</span>
+  <h2>Two distinct ways to manage property</h2>
+  <div class="intro"><p>Every property in REA follows one of two tracks.</p></div>
+  <div class="tracks">
+    <div class="track-card">
+      <span class="eyebrow">Track 01</span>
+      <h3>Property you own</h3>
+      <p class="sub">When your own capital is at risk, performance matters.</p>
+      <ul>
+        <li>Return on investment</li>
+        <li>Internal rate of return (IRR)</li>
+        <li>Cash-on-cash return</li>
+        <li>Net yield</li>
+        <li>Capital gain</li>
+        <li>Cash flow over time</li>
+        <li>Acquisition costs and total capital invested</li>
+      </ul>
+      <p class="foot">The objective is to give you a clearer picture of what the asset is actually earning you, rather than relying on headline rent or purchase price alone.</p>
+    </div>
+    <div class="track-card">
+      <span class="eyebrow">Track 02</span>
+      <h3>Property you manage for someone else</h3>
+      <p class="sub">When the property belongs to a client, friend, family member or another owner, the economics are different.</p>
+      <ul>
+        <li>Rent billed and collected</li>
+        <li>Outstanding and overdue balances</li>
+        <li>Management fees</li>
+        <li>Recoverable costs</li>
+        <li>The owner's net position</li>
+      </ul>
+      <p class="foot">Client property remains separate from your own portfolio, so the performance of assets you manage for others cannot artificially improve your own investment returns.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">III</span>
+  <h2>From financial data to decision intelligence</h2>
+  <div class="intro">
+    <p>REA is designed around a simple principle: <strong>better decisions start with a clearer understanding of the asset.</strong></p>
+    <p>Rather than forcing property owners to reconstruct spreadsheets every quarter, REA turns the information they already have into structured performance measures and cash-flow insights.</p>
+    <p>For owned properties, returns are calculated from the actual capital invested and dated cash flows — including costs that are often overlooked when assessing performance, such as transfer fees, legal costs and agent commissions. For managed properties, the focus shifts from investment return to collection, billing and the financial position of the property owner.</p>
+    <p><strong>This distinction is central to how REA works.</strong></p>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">IV</span>
+  <h2>Built for real-world property management</h2>
+  <div class="intro"><p>REA is designed for situations that standard property trackers often handle poorly. It supports:</p></div>
+  <div class="chips">
+    <span class="chip">Multiple properties</span>
+    <span class="chip">Multiple tenants</span>
+    <span class="chip">Different lease structures</span>
+    <span class="chip">Monthly / quarterly / annual rent schedules</span>
+    <span class="chip">Custom payment schedules</span>
+    <span class="chip">Security deposits</span>
+    <span class="chip">Shared costs</span>
+    <span class="chip">Multiple currencies</span>
+    <span class="chip">Properties across different countries</span>
+    <span class="chip">Separate ownership &amp; management portfolios</span>
+  </div>
+  <div class="intro" style="margin-top:22px">
+    <p>It also accommodates payment structures such as dated instalments or post-dated cheques, which are common in some real-estate markets.</p>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">V</span>
+  <h2>Who is REA for?</h2>
+  <div class="audience">
+    <div class="row"><b>Property owners</b><span>who want a clearer view of how their assets are performing.</span></div>
+    <div class="row"><b>Landlords</b><span>managing one or several properties and looking beyond rent collection to actual investment performance.</span></div>
+    <div class="row"><b>Property managers</b><span>who need to keep client properties and their own investments completely separate.</span></div>
+    <div class="row"><b>International investors</b><span>with multi-currency portfolios who need a consistent way to monitor assets across markets.</span></div>
+    <div class="row"><b>Small management businesses</b><span>looking for a structured way to manage rent billing and collection across a portfolio.</span></div>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">VI</span>
+  <h2>What REA is not</h2>
+  <div class="intro"><p>REA is deliberately focused.</p></div>
+  <div class="not-list">
+    <div class="not-item">
+      <div class="lbl">Not a deal-underwriting platform</div>
+      <p>REA is designed primarily for assets you already own or manage. It does not provide live market data, comparable transactions or an independent market valuation. Market values and assumptions are entered by the user.</p>
+    </div>
+    <div class="not-item">
+      <div class="lbl">Not accounting software</div>
+      <p>It does not replace double-entry accounting, tax filing or bank-feed systems. It is designed to complement your existing accounting and professional advisers.</p>
+    </div>
+    <div class="not-item">
+      <div class="lbl">Not financial advice</div>
+      <p>REA provides calculations and decision-support based on information and assumptions supplied by the user. Decisions should be independently assessed where professional advice is required.</p>
+    </div>
+  </div>
+  <p class="intent">This is intentional. REA is built to help you understand the asset better and make better-informed decisions — not to make those decisions for you.</p>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">VII</span>
+  <h2>Why REA exists</h2>
+  <div class="intro">
+    <p>REA was built from a practical problem. Existing tools often separate property accounting from investment performance, while real-world property owners and managers need both. They also tend to struggle with situations where one person owns some properties and manages others — particularly when rent, expenses and currencies differ across properties.</p>
+    <p>REA was designed to keep those realities separate while bringing the underlying financial picture together.</p>
+    <p><strong>Built from the perspective of someone who has managed investments, finance and complex commercial operations — not simply from the perspective of a software developer.</strong></p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <span class="eyebrow" style="color:color-mix(in srgb,var(--paper) 56%,transparent)">REA — Real Estate Assistant</span>
+    <h2 style="margin-top:16px">Practical real-estate decision intelligence<br>for owners and managers.</h2>
+    <p class="lede">REA is free to use. Operated from the EU. For further information, please refer to the Privacy Policy and Terms of Service within the application, or get in touch directly.</p>
+    <div class="cta-meta">
+      <div class="cline"><span class="k">Contact</span><span class="v"><a href="mailto:info@josephkhaouly.com">info@josephkhaouly.com</a></span></div>
+      <div class="cline"><span class="k">Status</span><span class="v">Beta testing — Coming soon</span></div>
+      <div class="cline"><span class="k">Built by</span><span class="v"><a href="https://www.josephkhaouly.com">Joseph Khaouly</a></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="foot"><div class="wrap">
+  <span>© <span id="yr"></span> Joseph Khaouly · REA</span>
+  <a href="https://www.josephkhaouly.com">www.josephkhaouly.com</a>
+</div></div>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
