@@ -61,6 +61,7 @@
       ], "cta": "Beta testing" },
 
     { "name": "CFO Flash", "status": "soon", "url": "https://cfo.josephkhaouly.com", "urlLabel": "cfo.josephkhaouly.com",
+      "infoUrl": "https://www.josephkhaouly.com/cfo/about",
       "tagline": "CFO Flash turns a company's period financials — P&L, budget-vs-actual, balance sheet — into a four-section decision memo (health, risks, decisions, questions) in seconds. It runs entirely on your own server, so data never leaves the building, and every number comes from deterministic, auditable calculations, not AI guesswork.",
       "meth": [
         { "k": "Domain", "v": "Corporate finance · Executive intelligence" },

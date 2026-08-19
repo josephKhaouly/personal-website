@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlRoot">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title id="metaTitle">CFO Flash — Executive Intelligence | About</title>
+<meta id="metaDesc" name="description" content="CFO Flash reads a trial balance and produces reconciled financial statements, analytical dashboards, budget and forecast comparison, covenant monitoring and a written CFO brief." />
+<meta name="robots" content="index, follow" />
+<link id="canonicalLink" rel="canonical" href="https://www.josephkhaouly.com/cfo/about" />
+
+<meta id="ogType" property="og:type" content="website" />
+<meta id="ogTitle" property="og:title" content="CFO Flash — Executive Intelligence" />
+<meta id="ogDesc" property="og:description" content="Never render a number the data doesn't justify. A self-hosted engine that turns a trial balance into reconciled statements, dashboards, budget/forecast comparison, covenant monitoring and a written CFO brief." />
+<meta id="ogUrl" property="og:url" content="https://www.josephkhaouly.com/cfo/about" />
+<meta name="twitter:card" content="summary" />
+<meta id="twTitle" name="twitter:title" content="CFO Flash — Executive Intelligence" />
+<meta id="twDesc" name="twitter:description" content="A self-hosted engine that turns a trial balance into reconciled statements, dashboards, budget/forecast comparison, covenant monitoring and a written CFO brief." />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2314181B'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='20' fill='%23E9EAE4' text-anchor='middle'%3ECFO%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --paper:#E9EAE4; --paper-2:#F4F5F0; --ink:#14181B; --ink-soft:#2A2F33;
+  --muted:#63686C; --line:#C7C9C1; --line-soft:#D8DAD2;
+  --accent:#1C4E43; --accent-ink:#0F3730;
+  --maxw:920px; --gutter:clamp(20px,5vw,64px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Schibsted Grotesk",system-ui,sans-serif;
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:500;letter-spacing:.04em}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--muted)}
+.serif{font-family:"Newsreader",Georgia,serif;font-weight:400}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
+
+.nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:16px var(--gutter);
+  display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:baseline;gap:9px;font-weight:600;letter-spacing:-.01em;text-decoration:none}
+.brand .mono{font-size:11px;color:var(--muted)}
+.back{font-size:13.5px;color:var(--muted);text-decoration:none;transition:.2s;display:inline-flex;align-items:center;gap:6px}
+.back:hover{color:var(--ink)}
+
+.lang-bar{border-bottom:1px solid var(--line-soft);background:var(--paper-2)}
+.lang-bar-in{max-width:var(--maxw);margin:0 auto;padding:9px var(--gutter);
+  display:flex;align-items:center;justify-content:flex-end;gap:10px}
+.lang-label{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted)}
+.lang-select{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.03em;
+  color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:2px;
+  padding:6px 28px 6px 10px;cursor:pointer;transition:border-color .2s;
+  appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2363686C'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 10px center}
+.lang-select:hover, .lang-select:focus{outline:none;border-color:var(--ink)}
+
+.hero{padding-block:clamp(48px,8vw,84px)}
+.eyebrow-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.hero h1{font-family:"Newsreader",serif;font-weight:400;font-size:clamp(36px,6vw,58px);
+  line-height:1.08;letter-spacing:-.02em}
+.hero .lede{font-family:"Newsreader",serif;font-size:clamp(20px,2.6vw,25px);line-height:1.45;
+  margin-top:22px;max-width:60ch;color:var(--ink-soft)}
+.hero .lede em{font-style:italic;color:var(--accent-ink)}
+.hero p.body{margin-top:18px;max-width:64ch;color:var(--ink-soft);font-size:16.5px}
+.status-row{display:flex;align-items:center;gap:10px;margin-top:30px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.status-row span{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+.sec{padding-block:clamp(48px,7vw,80px);border-top:1px solid var(--line)}
+.sec-idx{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;letter-spacing:.1em;color:var(--accent)}
+.sec h2{font-family:"Newsreader",serif;font-size:clamp(26px,4vw,36px);line-height:1.1;
+  letter-spacing:-.015em;margin-top:14px}
+.sec h3{font-family:"Newsreader",serif;font-size:20px;font-weight:500;margin-top:4px;letter-spacing:-.01em}
+.sec .intro{font-size:16.5px;color:var(--ink-soft);margin-top:18px;max-width:66ch}
+.sec .intro p{margin-bottom:14px}
+.sec .intro p:last-child{margin-bottom:0}
+.sec .intro strong{color:var(--ink);font-weight:600}
+.sec .intro em{font-style:italic;color:var(--accent-ink)}
+
+.subhead{margin-top:34px}
+.subhead:first-of-type{margin-top:26px}
+.subhead .lbl{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accent-ink);font-weight:600}
+.subhead .txt{margin-top:10px;color:var(--ink-soft);font-size:16px;max-width:66ch}
+.subhead .txt p{margin-bottom:12px}
+.subhead .txt p:last-child{margin-bottom:0}
+.subhead .txt strong{color:var(--ink);font-weight:600}
+.subhead .txt em{font-style:italic;color:var(--accent-ink)}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
+.mini-card{border:1px solid var(--line);background:var(--paper-2);padding:22px 24px}
+.mini-card .eyebrow{color:var(--accent)}
+.mini-card h4{font-family:"Newsreader",serif;font-size:19px;font-weight:500;margin-top:10px;letter-spacing:-.01em}
+.mini-card p{margin-top:10px;color:var(--ink-soft);font-size:14.5px;line-height:1.55}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.04em;
+  padding:7px 12px;border:1px solid var(--line);border-radius:2px;color:var(--ink-soft)}
+
+.not-list{margin-top:12px;display:flex;flex-direction:column;gap:20px}
+.not-item .lbl{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--accent-ink)}
+.not-item p{margin-top:8px;color:var(--ink-soft);font-size:15.5px;max-width:64ch}
+.intent{margin-top:22px;padding:22px 24px;background:var(--paper-2);border-left:2px solid var(--accent);
+  font-family:"Newsreader",serif;font-style:italic;font-size:19px;color:var(--ink-soft)}
+
+.cta{background:var(--ink);color:var(--paper);margin-top:clamp(30px,5vw,60px)}
+.cta .wrap{padding-block:clamp(50px,8vw,84px)}
+.cta h2{font-family:"Newsreader",serif;font-size:clamp(28px,4.5vw,44px);font-weight:400;letter-spacing:-.015em}
+.cta .lede{color:color-mix(in srgb,var(--paper) 76%,transparent);max-width:56ch;margin-top:16px;font-size:16.5px}
+.cta-meta{margin-top:30px;display:flex;flex-direction:column;gap:2px}
+.cline{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;
+  border-top:1px solid rgba(233,234,228,.16)}
+.cline:last-child{border-bottom:1px solid rgba(233,234,228,.16)}
+.cline .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:color-mix(in srgb,var(--paper) 55%,transparent)}
+.cline .v{font-size:15.5px;color:var(--paper)}
+.cline a{text-decoration:none;color:var(--paper)}
+.cline a:hover{text-decoration:underline}
+
+.foot{border-top:1px solid var(--line)}
+.foot .wrap{padding-block:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.foot a{color:var(--muted);text-decoration:none}
+.foot a:hover{color:var(--ink)}
+
+@media(max-width:720px){
+  .grid2{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .brand .mono{display:none}
+  .back{font-size:12.5px;white-space:nowrap}
+  .lang-bar-in{justify-content:space-between}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a href="https://www.josephkhaouly.com" class="brand">CFO<span class="mono">/ Flash — Executive Intelligence</span></a>
+    <a href="https://www.josephkhaouly.com/#ventures" class="back" id="backLink">← Joseph Khaouly</a>
+  </div>
+  <div class="lang-bar">
+    <div class="lang-bar-in">
+      <label class="lang-label" for="langSelect" id="langLabel">Language</label>
+      <select id="langSelect" class="lang-select" aria-label="Language">
+        <option value="en">EN — English</option>
+        <option value="fr">FR — Français</option>
+        <option value="nl">NL — Nederlands</option>
+        <option value="de">DE — Deutsch</option>
+      </select>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <div class="eyebrow-row">
+    <span class="eyebrow" id="heroEyebrowL">CFO Flash — Executive Intelligence</span>
+    <span class="eyebrow" id="heroEyebrowR">Final testing phase</span>
+  </div>
+  <h1 id="heroH1"></h1>
+  <p class="lede" id="heroLede"></p>
+  <p class="body" id="heroBody"></p>
+  <div class="status-row"><span class="dot"></span><span id="heroStatus"></span></div>
+</header>
+
+<hr class="rule" />
+
+<section class="sec wrap">
+  <span class="sec-idx">I</span>
+  <h2 id="s1h2"></h2>
+  <div class="intro" id="s1body"></div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">II</span>
+  <h2 id="s2h2"></h2>
+  <div class="intro" id="s2body"></div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">III</span>
+  <h2 id="s3h2"></h2>
+  <div class="intro" id="s3intro"></div>
+  <div id="s3sub"></div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">IV</span>
+  <h2 id="s4h2"></h2>
+  <div class="intro" id="s4intro"></div>
+  <div class="grid2" id="s4dash"></div>
+  <div id="s4sub"></div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">V</span>
+  <h2 id="s5h2"></h2>
+  <div class="intro" id="s5body"></div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">VI</span>
+  <h2 id="s6h2"></h2>
+  <p class="intent" id="s6lead"></p>
+  <div class="intro" id="s6body" style="margin-top:22px"></div>
+</section>
+
+<section class="sec wrap">
+  <span class="sec-idx">VII</span>
+  <h2 id="s7h2"></h2>
+  <div class="intro" id="s7body"></div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <span class="eyebrow" id="ctaEyebrow" style="color:color-mix(in srgb,var(--paper) 56%,transparent)">CFO Flash — Executive Intelligence</span>
+    <h2 id="ctaH2" style="margin-top:16px"></h2>
+    <p class="lede" id="ctaLede"></p>
+    <div class="cta-meta">
+      <div class="cline"><span class="k" id="ctaK1"></span><span class="v"><a href="mailto:info@josephkhaouly.com">info@josephkhaouly.com</a></span></div>
+      <div class="cline"><span class="k" id="ctaK2"></span><span class="v" id="ctaStatusV"></span></div>
+      <div class="cline"><span class="k" id="ctaK3"></span><span class="v"><a href="https://www.josephkhaouly.com">Joseph Khaouly</a></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="foot"><div class="wrap">
+  <span id="footL">© <span id="yr"></span> Joseph Khaouly · CFO Flash</span>
+  <a href="https://www.josephkhaouly.com">www.josephkhaouly.com</a>
+</div></div>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+const I18N = {
+
+en: {
+  metaTitle:"CFO Flash — Executive Intelligence | About",
+  metaDesc:"CFO Flash reads a trial balance and produces reconciled financial statements, analytical dashboards, budget and forecast comparison, covenant monitoring and a written CFO brief.",
+  langLabel:"Language",
+  backLink:"← Joseph Khaouly",
+  eyebrowL:"CFO Flash — Executive Intelligence",
+  eyebrowR:"Final testing phase",
+  heroH1:"Never render a number the data doesn't justify.",
+  heroLede:"CFO Flash reads a trial balance and produces <em>reconciled financial statements</em>, analytical dashboards, budget and forecast comparison, covenant monitoring and a written CFO brief.",
+  heroBody:"You upload the file your accounting system already exports. The software maps the accounts, checks that the data holds together, and produces a balance sheet, profit and loss account, cash flow statement and statement of changes in equity — in the statutory format of whichever framework you report under, in the language you choose.",
+  heroStatus:"Self-hosted · Free to use",
+  s1h2:"What it is",
+  s1body:[
+    "It supports eight reporting frameworks — IFRS, US GAAP, UK FRS 102, and the Belgian, French, German, Dutch and Lebanese statutory models — and reads the national charts of accounts behind five of them: the Belgian PCMN, the French PCG, the German SKR 04, the Dutch RGS and the Lebanese PCG-L.",
+    "It runs on your own servers or a private virtual machine. It is not a hosted service, and your ledger does not leave your infrastructure."
+  ],
+  s2h2:"The idea behind it",
+  s2body:[
+    "Most finance teams already own the data they need. What they lack is the two days of spreadsheet work that turns a trial balance into something a board, a bank or a shareholder can read — and the confidence that the result is right.",
+    "The tools that exist tend to sit at one of two extremes. Bookkeeping software produces statutory accounts and stops. Business intelligence platforms produce beautiful dashboards, but only after a consultant has built a semantic model, and they have no opinion about whether the numbers reconcile.",
+    "<strong>CFO Flash sits in between: it does the close-adjacent analytical work, it does it from the file you already have, and it refuses to show you anything it cannot justify.</strong>"
+  ],
+  s3h2:"How it works",
+  s3intro:"<p><strong>Four separated layers.</strong></p><p>Your chart of accounts stays as it is. Each account is mapped once — not to a report, but to a framework-neutral economic line: the Belgian 400 and the French 411 both land on <em>trade receivables</em>, the 440 and the 401 both on <em>trade payables</em>. There are just over a hundred of these lines, and this mapping is the only step that asks anything of you.</p><p>Everything else derives from that single mapping. The statements, the ratios, the cash flow, the dashboards and the brief all read the same canonical position. And because each reporting framework is only a way of ordering and captioning those lines, <strong>switching framework re-renders the statements without touching the mapping</strong>. The same file produces a Belgian statutory balance sheet and an IFRS one, with no rework.</p>",
+  s3sub:[
+    {lbl:"The mapping is largely automatic, and it learns.", txt:"<p>Rules for each national chart place most accounts on the first pass. Multilingual label matching handles the rest. What the software cannot place with confidence, it shows you — grouped by economic line and by amount, so you review <em>trade receivables, €4.2m across fourteen accounts</em> rather than reading a list of three hundred codes.</p><p>Once approved, the mapping is stored. The following month's upload asks you about new accounts only.</p>"},
+    {lbl:"Everything reconciles, or nothing renders.", txt:"<p>Thirteen controls run on every upload: debits against credits, assets against equity and liabilities, the result per the trial balance against the result computed from the profit and loss, opening balances against the prior period's closing, and structural checks — if there is interest expense there must be debt, if there is revenue there must be receivables or advances.</p><p>Blocking failures stop the statements from rendering at all, and show you the accounts responsible. Warnings render with a visible flag. A reconciliation certificate — company, period, mapping version, user, timestamp, every control and its result — is downloadable as a PDF, and is included in the board pack by default.</p>"}
+  ],
+  s4h2:"The analysis",
+  s4intro:"<p><strong>Four dashboards</strong>, each answering a different question rather than repeating the same charts against a different column.</p>",
+  s4dash:[
+    {eyebrow:"Performance", body:"The margin ladder from revenue through production, value added, EBITDA and operating result to net result, drawn as a waterfall; an EBITDA bridge decomposing the movement by cost group; cost structure as a share of production; rolling twelve-month trend with a seasonality band; and the ten largest cost lines with their movement."},
+    {eyebrow:"Working capital", body:"Days sales outstanding, days payable, days inventory and the cash conversion cycle over time; a trade working capital bridge; working capital as a percentage of revenue; and, where a receivables aging file is supplied, overdue exposure and customer concentration."},
+    {eyebrow:"Solvency and returns", body:"Current, quick and cash ratios; a net debt bridge from opening to closing; gearing and leverage with covenant thresholds drawn on the same axis; interest cover; a Du Pont decomposition of return on equity."},
+    {eyebrow:"Cash", body:"The indirect cash flow as a waterfall, free cash flow, cash conversion against EBITDA, capital expenditure against depreciation, cash runway where the business is burning, and the debt maturity wall where a loan register is supplied."}
+  ],
+  s4sub:[
+    {lbl:"One comparison basis governs every screen.", txt:"<p>Rather than separate dashboards for actual against prior period, prior year, or budget, there is a single control at the top of the application: choose <em>vs prior period</em>, <em>vs prior year</em>, <em>vs budget</em>, <em>vs a named forecast</em>, or <em>vs rolling twelve months</em>, and every statement, tile and bridge answers on that basis. Each tile states the basis it is showing, so two figures on one screen can never be comparing different things.</p>"},
+    {lbl:"Budget and forecast are first-class.", txt:"<p>Budgets rarely arrive in the shape a ledger does — they are signed amounts, often monthly, often summarised above account level into a dozen cost categories rather than three hundred accounts. All of that is accepted, and categories are mapped to the same economic lines the accounts are, so budget and actual meet on common ground.</p><p>Forecasts sit alongside budgets as versions — original budget, first reforecast, second, latest estimate — and the comparison basis names the version on the face of the report. <em>Versus budget</em> is not a meaningful statement when three budgets exist.</p><p>Two refusals worth knowing about. A budget from a neighbouring period is never substituted for a missing one, because the resulting variance would be entirely an artefact of the calendar. And where a line was never budgeted, its full actual is not reported as overspending — the software names those lines instead, because a variance against nothing is not a variance.</p>"},
+    {lbl:"Bridges decompose.", txt:"<p>Every waterfall bar opens to the economic lines beneath it, and from there to the individual accounts and the trial balance rows they came from. Where a movement cannot be fully explained, the unexplained part is drawn as its own bar and labelled — never absorbed into a neighbouring one to make the chart close.</p>"},
+    {lbl:"Covenant monitoring.", txt:"<p>Covenant monitoring carries each covenant's definition, test frequency, basis, threshold, current value and headroom — headroom in currency first, because <em>EBITDA can fall by €1.4m before breach</em> is more useful than <em>2.7 times against a limit of 3.0</em>. Definitions that vary between agreements are settings rather than assumptions: whether EBITDA is stated before or after non-recurring items, and whether lease liabilities count as debt, are chosen per covenant, because a facility signed before IFRS 16 is often tested on the old basis. Thresholds that have not been confirmed against the actual agreement are shown as unverified, and no breach is reported against a number nobody checked.</p>"}
+  ],
+  s5h2:"The written brief",
+  s5body:[
+    "<strong>Generated, but not invented.</strong>",
+    "A deterministic engine runs first: variances beyond materiality, ratio deterioration, covenant headroom, unusual movements, failed controls. It produces a structured set of facts, each with an identifier. Only then does a language model see them, and its only permitted job is to select, order and narrate.",
+    "Every generated figure is checked back against that fact set before the brief is shown. If a number appears in the text that is not in the facts, the brief is rejected and regenerated. Every sentence carries a reference to the calculation behind it, so a reader can click through from the prose to the accounts.",
+    "The brief covers only what was uploaded. No budget means no budget commentary; no prior year means the current period alone. It is available in English, French, German and Dutch, and in a plain-language variant alongside the financial one.",
+    "The rest of the application does not need the model at all, and works with it switched off."
+  ],
+  s6h2:"The principle it is built on",
+  s6lead:"Never render a number the data does not justify.",
+  s6body:[
+    "A blank tile with a stated reason is a correct output. A plausible wrong number is not.",
+    "In practice this means the software says no more often than most tools do. If there is no prior-period trial balance, there is no cash flow statement — and the page says so, naming what would unlock it. Without twelve consecutive months there is no rolling-twelve-month figure, and none is estimated. Without a loan register there is no debt service cover ratio, and no proxy is substituted. Where a chart of accounts cannot express whether a debt falls due within the year, the software asks rather than assuming.",
+    "Every metric states its own basis. A ratio computed on closing rather than average balances says so. A figure that rests on an assumption — a proxy for maintenance capital expenditure, say — says which assumption, on the tile, next to the number.",
+    "An earlier version of this software failed for the opposite reason: the data people uploaded did not match what the outputs assumed, and nothing said so. That failure is the origin of every design decision above."
+  ],
+  s7h2:"Where it stands",
+  s7body:[
+    "The financial engine is complete and heavily tested — over fifteen hundred automated tests, including a deliberately broken input for every control, and identity tests proving that the same business kept on five different national charts produces one net result, one balance sheet and one net debt figure.",
+    "Statements, dashboards, budget and forecast comparison, covenant monitoring, the brief and the board pack all work. Multi-entity support, with a portfolio view across companies, is the last piece in progress.",
+    "Testing continues against real trial balances contributed anonymously by working companies. That work matters more than any amount of synthetic testing: the first real ledgers to go through the system immediately found defects that a thousand generated files had not. It is ongoing, and it is why this is described as a working system rather than a finished product."
+  ],
+  ctaH2:"Practical details",
+  ctaLede:"CFO Flash will be free and publicly available. It is self-hosted: it runs on your own server or virtual machine, and your data stays there. The language model used for the written brief runs locally by default and can be replaced with an external API if you prefer — or disabled entirely, in which case everything except the brief still works.",
+  ctaK1:"Contact", ctaK2:"Status", ctaK3:"Built by",
+  ctaStatusV:"Final testing phase — Coming soon",
+  footL:"Joseph Khaouly · CFO Flash"
+},
+
+fr: {
+  metaTitle:"CFO Flash — Intelligence exécutive | À propos",
+  metaDesc:"CFO Flash lit une balance générale et produit des états financiers réconciliés, des tableaux de bord analytiques, une comparaison budget et prévisions, un suivi des covenants et une note de synthèse rédigée pour le CFO.",
+  langLabel:"Langue",
+  backLink:"← Joseph Khaouly",
+  eyebrowL:"CFO Flash — Intelligence exécutive",
+  eyebrowR:"Phase de test finale",
+  heroH1:"Ne jamais afficher un chiffre que les données ne justifient pas.",
+  heroLede:"CFO Flash lit une balance générale et produit des <em>états financiers réconciliés</em>, des tableaux de bord analytiques, une comparaison budget et prévisions, un suivi des covenants et une note de synthèse rédigée pour le CFO.",
+  heroBody:"Vous importez le fichier que votre logiciel comptable exporte déjà. Le logiciel mappe les comptes, vérifie la cohérence des données, et produit un bilan, un compte de résultat, un tableau des flux de trésorerie et un tableau de variation des capitaux propres — dans le format statutaire du référentiel sous lequel vous publiez, dans la langue de votre choix.",
+  heroStatus:"Auto-hébergé · Gratuit",
+  s1h2:"Ce que c'est",
+  s1body:[
+    "Il prend en charge huit référentiels comptables — IFRS, US GAAP, UK FRS 102, ainsi que les modèles statutaires belge, français, allemand, néerlandais et libanais — et lit les plans comptables nationaux derrière cinq d'entre eux : le PCMN belge, le PCG français, le SKR 04 allemand, le RGS néerlandais et le PCG-L libanais.",
+    "Il fonctionne sur vos propres serveurs ou sur une machine virtuelle privée. Ce n'est pas un service hébergé, et votre grand livre ne quitte jamais votre infrastructure."
+  ],
+  s2h2:"L'idée qui le sous-tend",
+  s2body:[
+    "La plupart des équipes financières possèdent déjà les données dont elles ont besoin. Ce qui leur manque, ce sont les deux jours de travail sur tableur qui transforment une balance générale en un document lisible par un conseil d'administration, une banque ou un actionnaire — et la certitude que le résultat est exact.",
+    "Les outils existants ont tendance à se situer à l'un des deux extrêmes. Les logiciels de comptabilité produisent des comptes statutaires et s'arrêtent là. Les plateformes de business intelligence produisent de beaux tableaux de bord, mais seulement après qu'un consultant a construit un modèle sémantique, et elles n'ont aucun avis sur la question de savoir si les chiffres se réconcilient.",
+    "<strong>CFO Flash se situe entre les deux : il effectue le travail analytique proche de la clôture, il le fait à partir du fichier que vous possédez déjà, et il refuse de vous montrer quoi que ce soit qu'il ne puisse justifier.</strong>"
+  ],
+  s3h2:"Comment ça marche",
+  s3intro:"<p><strong>Quatre couches distinctes.</strong></p><p>Votre plan comptable reste inchangé. Chaque compte est mappé une seule fois — non pas vers un rapport, mais vers une ligne économique neutre vis-à-vis du référentiel : le compte belge 400 et le compte français 411 aboutissent tous deux sur <em>créances clients</em>, les comptes 440 et 401 tous deux sur <em>dettes fournisseurs</em>. Il y a un peu plus d'une centaine de ces lignes, et ce mappage est la seule étape qui vous demande quelque chose.</p><p>Tout le reste découle de ce mappage unique. Les états financiers, les ratios, les flux de trésorerie, les tableaux de bord et la note de synthèse lisent tous la même position canonique. Et comme chaque référentiel comptable n'est qu'une façon d'ordonner et de nommer ces lignes, <strong>changer de référentiel régénère les états financiers sans toucher au mappage</strong>. Le même fichier produit un bilan statutaire belge et un bilan IFRS, sans aucun retravail.</p>",
+  s3sub:[
+    {lbl:"Le mappage est largement automatique, et il apprend.", txt:"<p>Des règles propres à chaque plan comptable national placent la plupart des comptes dès la première passe. La correspondance multilingue des libellés traite le reste. Ce que le logiciel ne peut pas placer avec confiance, il vous le montre — regroupé par ligne économique et par montant, de sorte que vous examinez <em>créances clients, 4,2 M€ répartis sur quatorze comptes</em> plutôt que de lire une liste de trois cents codes.</p><p>Une fois approuvé, le mappage est enregistré. L'import du mois suivant ne vous interroge que sur les nouveaux comptes.</p>"},
+    {lbl:"Tout se réconcilie, ou rien ne s'affiche.", txt:"<p>Treize contrôles s'exécutent à chaque import : débits contre crédits, actif contre capitaux propres et passif, le résultat selon la balance générale contre le résultat calculé à partir du compte de résultat, les soldes d'ouverture contre la clôture de la période précédente, et des contrôles structurels — s'il y a des charges d'intérêts, il doit y avoir de la dette ; s'il y a du chiffre d'affaires, il doit y avoir des créances ou des avances.</p><p>Les échecs bloquants empêchent purement et simplement l'affichage des états financiers, et vous indiquent les comptes responsables. Les avertissements s'affichent avec un signal visible. Un certificat de réconciliation — société, période, version du mappage, utilisateur, horodatage, chaque contrôle et son résultat — est téléchargeable en PDF, et il est inclus par défaut dans le dossier destiné au conseil.</p>"}
+  ],
+  s4h2:"L'analyse",
+  s4intro:"<p><strong>Quatre tableaux de bord</strong>, chacun répondant à une question différente plutôt que de répéter les mêmes graphiques sous une autre colonne.</p>",
+  s4dash:[
+    {eyebrow:"Performance", body:"L'échelle de marge, du chiffre d'affaires jusqu'au résultat net en passant par la production, la valeur ajoutée, l'EBITDA et le résultat opérationnel, présentée sous forme de cascade ; un pont EBITDA décomposant la variation par groupe de coûts ; la structure des coûts en part de la production ; une tendance glissante sur douze mois avec une bande de saisonnalité ; et les dix principales lignes de coûts avec leur variation."},
+    {eyebrow:"Besoin en fonds de roulement", body:"Le délai clients, le délai fournisseurs, le délai de rotation des stocks et le cycle de conversion de trésorerie dans le temps ; un pont du besoin en fonds de roulement d'exploitation ; le besoin en fonds de roulement en pourcentage du chiffre d'affaires ; et, lorsqu'un fichier d'échéancier des créances est fourni, l'exposition aux impayés et la concentration client."},
+    {eyebrow:"Solvabilité et rentabilité", body:"Les ratios de liquidité générale, réduite et immédiate ; un pont de la dette nette de l'ouverture à la clôture ; le gearing et le levier avec les seuils de covenant tracés sur le même axe ; la couverture des intérêts ; une décomposition de Du Pont du rendement des capitaux propres."},
+    {eyebrow:"Trésorerie", body:"Le flux de trésorerie selon la méthode indirecte présenté en cascade, le flux de trésorerie disponible, la conversion de trésorerie par rapport à l'EBITDA, les investissements par rapport aux amortissements, l'autonomie de trésorerie lorsque l'entreprise consomme du cash, et le mur d'échéances de la dette lorsqu'un tableau des emprunts est fourni."}
+  ],
+  s4sub:[
+    {lbl:"Une seule base de comparaison régit chaque écran.", txt:"<p>Plutôt que des tableaux de bord séparés pour le réel comparé à la période précédente, à l'année précédente ou au budget, il existe un contrôle unique en haut de l'application : choisissez <em>vs période précédente</em>, <em>vs année précédente</em>, <em>vs budget</em>, <em>vs une prévision nommée</em>, ou <em>vs douze mois glissants</em>, et chaque état, chaque vignette et chaque pont répond sur cette base. Chaque vignette indique la base qu'elle affiche, de sorte que deux chiffres sur un même écran ne peuvent jamais comparer des choses différentes.</p>"},
+    {lbl:"Le budget et les prévisions sont des citoyens de premier rang.", txt:"<p>Les budgets arrivent rarement sous la forme d'un grand livre — ce sont des montants arrêtés, souvent mensuels, souvent résumés au-dessus du niveau des comptes en une douzaine de catégories de coûts plutôt qu'en trois cents comptes. Tout cela est accepté, et les catégories sont mappées vers les mêmes lignes économiques que les comptes, de sorte que budget et réel se rejoignent sur un terrain commun.</p><p>Les prévisions se placent aux côtés des budgets comme des versions — budget initial, premier reforecast, deuxième, dernière estimation — et la base de comparaison nomme la version en face du rapport. <em>Par rapport au budget</em> n'est pas une affirmation porteuse de sens lorsque trois budgets existent.</p><p>Deux refus qu'il convient de connaître. Un budget d'une période voisine n'est jamais substitué à un budget manquant, car l'écart en résultant serait entièrement un artefact du calendrier. Et lorsqu'une ligne n'a jamais été budgétée, son réel intégral n'est pas signalé comme un dépassement — le logiciel nomme plutôt ces lignes, car un écart par rapport à rien n'est pas un écart.</p>"},
+    {lbl:"Les ponts se décomposent.", txt:"<p>Chaque barre de la cascade s'ouvre sur les lignes économiques qui la composent, puis sur les comptes individuels et les lignes de la balance générale dont ils sont issus. Lorsqu'une variation ne peut être entièrement expliquée, la part inexpliquée est représentée par sa propre barre et étiquetée comme telle — jamais absorbée dans une barre voisine pour faire boucler le graphique.</p>"},
+    {lbl:"Suivi des covenants.", txt:"<p>Le suivi des covenants porte la définition de chaque covenant, sa fréquence de test, sa base, son seuil, sa valeur actuelle et sa marge — la marge exprimée d'abord en devise, car <em>l'EBITDA peut baisser de 1,4 M€ avant rupture</em> est plus utile que <em>2,7 fois contre une limite de 3,0</em>. Les définitions qui varient d'un contrat à l'autre sont des paramètres plutôt que des hypothèses : le fait que l'EBITDA soit exprimé avant ou après éléments non récurrents, et le fait que les dettes locatives comptent ou non comme de la dette, sont choisis pour chaque covenant, car un contrat signé avant IFRS 16 est souvent testé sur l'ancienne base. Les seuils qui n'ont pas été confirmés par rapport au contrat réel sont affichés comme non vérifiés, et aucun manquement n'est signalé sur un chiffre que personne n'a contrôlé.</p>"}
+  ],
+  s5h2:"La note de synthèse rédigée",
+  s5body:[
+    "<strong>Générée, mais non inventée.</strong>",
+    "Un moteur déterministe s'exécute en premier : écarts au-delà du seuil de matérialité, dégradation des ratios, marge de covenant, mouvements inhabituels, contrôles en échec. Il produit un ensemble structuré de faits, chacun doté d'un identifiant. Ce n'est qu'ensuite qu'un modèle de langage les examine, et sa seule mission autorisée est de sélectionner, ordonner et rédiger.",
+    "Chaque chiffre généré est vérifié par rapport à cet ensemble de faits avant que la note ne soit affichée. Si un chiffre apparaît dans le texte sans figurer dans les faits, la note est rejetée et régénérée. Chaque phrase porte une référence au calcul qui la sous-tend, de sorte qu'un lecteur peut naviguer du texte vers les comptes.",
+    "La note ne couvre que ce qui a été importé. Pas de budget signifie pas de commentaire budgétaire ; pas d'année précédente signifie la période en cours seule. Elle est disponible en anglais, français, allemand et néerlandais, ainsi que dans une variante en langage simplifié à côté de la version financière.",
+    "Le reste de l'application n'a nullement besoin du modèle, et fonctionne avec celui-ci désactivé."
+  ],
+  s6h2:"Le principe sur lequel il est construit",
+  s6lead:"Ne jamais afficher un chiffre que les données ne justifient pas.",
+  s6body:[
+    "Une vignette vide accompagnée d'une raison énoncée est un résultat correct. Un chiffre faux mais plausible ne l'est pas.",
+    "En pratique, cela signifie que le logiciel dit non plus souvent que la plupart des outils. S'il n'y a pas de balance générale de la période précédente, il n'y a pas de tableau des flux de trésorerie — et la page le dit, en indiquant ce qui permettrait de le débloquer. Sans douze mois consécutifs, il n'y a pas de chiffre glissant sur douze mois, et aucun n'est estimé. Sans tableau des emprunts, il n'y a pas de ratio de couverture du service de la dette, et aucun proxy n'est substitué. Lorsqu'un plan comptable ne permet pas d'exprimer si une dette est exigible dans l'année, le logiciel pose la question plutôt que de supposer.",
+    "Chaque indicateur indique sa propre base. Un ratio calculé sur des soldes de clôture plutôt que des soldes moyens le précise. Un chiffre qui repose sur une hypothèse — un proxy pour les investissements de maintien, par exemple — indique quelle hypothèse, sur la vignette, à côté du chiffre.",
+    "Une version antérieure de ce logiciel a échoué pour la raison inverse : les données importées par les utilisateurs ne correspondaient pas à ce que les résultats supposaient, et rien ne le signalait. Cet échec est à l'origine de chacune des décisions de conception ci-dessus."
+  ],
+  s7h2:"Où en est le projet",
+  s7body:[
+    "Le moteur financier est complet et lourdement testé — plus de mille cinq cents tests automatisés, incluant une entrée délibérément erronée pour chaque contrôle, ainsi que des tests d'identité prouvant que la même entreprise, tenue selon cinq plans comptables nationaux différents, produit un seul résultat net, un seul bilan et un seul chiffre de dette nette.",
+    "Les états financiers, les tableaux de bord, la comparaison budget et prévisions, le suivi des covenants, la note de synthèse et le dossier destiné au conseil fonctionnent tous. La prise en charge multi-entités, avec une vue de portefeuille consolidée entre sociétés, est le dernier élément en cours de développement.",
+    "Les tests se poursuivent sur des balances générales réelles fournies anonymement par des entreprises en activité. Ce travail compte plus que n'importe quelle quantité de tests synthétiques : les premiers grands livres réels passés dans le système ont immédiatement révélé des défauts que mille fichiers générés n'avaient pas révélés. Ce travail est en cours, et c'est pourquoi ce logiciel est présenté comme un système opérationnel plutôt que comme un produit fini."
+  ],
+  ctaH2:"Informations pratiques",
+  ctaLede:"CFO Flash sera gratuit et accessible publiquement. Il est auto-hébergé : il fonctionne sur votre propre serveur ou machine virtuelle, et vos données y restent. Le modèle de langage utilisé pour la note de synthèse s'exécute localement par défaut et peut être remplacé par une API externe si vous le préférez — ou entièrement désactivé, auquel cas tout, à l'exception de la note, continue de fonctionner.",
+  ctaK1:"Contact", ctaK2:"Statut", ctaK3:"Développé par",
+  ctaStatusV:"Phase de test finale — Bientôt disponible",
+  footL:"Joseph Khaouly · CFO Flash"
+},
+
+nl: {
+  metaTitle:"CFO Flash — Executive Intelligence | Over",
+  metaDesc:"CFO Flash leest een proef- en saldibalans en produceert gereconcilieerde jaarrekeningen, analytische dashboards, budget- en prognosevergelijking, covenantbewaking en een geschreven CFO-briefing.",
+  langLabel:"Taal",
+  backLink:"← Joseph Khaouly",
+  eyebrowL:"CFO Flash — Executive Intelligence",
+  eyebrowR:"Laatste testfase",
+  heroH1:"Nooit een cijfer tonen dat de data niet rechtvaardigt.",
+  heroLede:"CFO Flash leest een proef- en saldibalans en produceert <em>gereconcilieerde jaarrekeningen</em>, analytische dashboards, budget- en prognosevergelijking, covenantbewaking en een geschreven CFO-briefing.",
+  heroBody:"U uploadt het bestand dat uw boekhoudsysteem al exporteert. De software mapt de rekeningen, controleert of de gegevens sluitend zijn, en produceert een balans, winst-en-verliesrekening, kasstroomoverzicht en mutatieoverzicht eigen vermogen — in het wettelijke formaat van het raamwerk waaronder u rapporteert, in de taal van uw keuze.",
+  heroStatus:"Self-hosted · Gratis te gebruiken",
+  s1h2:"Wat het is",
+  s1body:[
+    "Het ondersteunt acht rapportageraamwerken — IFRS, US GAAP, UK FRS 102, en de Belgische, Franse, Duitse, Nederlandse en Libanese wettelijke modellen — en leest de nationale rekeningschema's achter vijf daarvan: het Belgische PCMN, het Franse PCG, het Duitse SKR 04, het Nederlandse RGS en het Libanese PCG-L.",
+    "Het draait op uw eigen servers of een private virtuele machine. Het is geen gehoste dienst, en uw grootboek verlaat uw infrastructuur niet."
+  ],
+  s2h2:"De gedachte erachter",
+  s2body:[
+    "De meeste financiële teams beschikken al over de gegevens die ze nodig hebben. Wat ontbreekt, zijn de twee dagen spreadsheetwerk die een proef- en saldibalans omzetten in iets dat een raad van bestuur, een bank of een aandeelhouder kan lezen — en de zekerheid dat het resultaat klopt.",
+    "De bestaande tools bevinden zich doorgaans op een van twee uitersten. Boekhoudsoftware produceert wettelijke jaarrekeningen en stopt daar. Business intelligence-platformen produceren fraaie dashboards, maar pas nadat een consultant een semantisch model heeft gebouwd, en ze hebben geen mening over de vraag of de cijfers sluiten.",
+    "<strong>CFO Flash zit daartussenin: het verricht het analytische werk rond de afsluiting, het doet dit vanuit het bestand dat u al heeft, en het weigert u iets te tonen dat het niet kan verantwoorden.</strong>"
+  ],
+  s3h2:"Hoe het werkt",
+  s3intro:"<p><strong>Vier gescheiden lagen.</strong></p><p>Uw rekeningschema blijft ongewijzigd. Elke rekening wordt eenmalig gemapt — niet naar een rapport, maar naar een raamwerkneutrale economische lijn: de Belgische 400 en de Franse 411 komen beide uit op <em>handelsvorderingen</em>, de 440 en de 401 beide op <em>handelsschulden</em>. Er zijn iets meer dan honderd van deze lijnen, en deze mapping is de enige stap die iets van u vraagt.</p><p>Al het overige volgt uit die ene mapping. De jaarrekeningen, de ratio's, het kasstroomoverzicht, de dashboards en de briefing lezen allemaal dezelfde canonieke positie. En omdat elk rapportageraamwerk slechts een manier is om diezelfde lijnen te ordenen en te benoemen, <strong>rendert het wisselen van raamwerk de jaarrekeningen opnieuw zonder de mapping aan te raken</strong>. Hetzelfde bestand levert zowel een Belgische wettelijke balans als een IFRS-balans op, zonder enig extra werk.</p>",
+  s3sub:[
+    {lbl:"De mapping verloopt grotendeels automatisch, en leert bij.", txt:"<p>Regels per nationaal rekeningschema plaatsen bij de eerste doorloop het merendeel van de rekeningen. Meertalige labelherkenning verzorgt de rest. Wat de software niet met voldoende zekerheid kan plaatsen, toont zij aan u — gegroepeerd per economische lijn en per bedrag, zodat u <em>handelsvorderingen, € 4,2 mln verdeeld over veertien rekeningen</em> beoordeelt in plaats van een lijst van driehonderd codes te doorlopen.</p><p>Eenmaal goedgekeurd, wordt de mapping opgeslagen. Bij de upload van de volgende maand wordt alleen nog naar nieuwe rekeningen gevraagd.</p>"},
+    {lbl:"Alles sluit, of er wordt niets weergegeven.", txt:"<p>Bij elke upload lopen dertien controles: debet tegen credit, activa tegen eigen vermogen en verplichtingen, het resultaat volgens de proef- en saldibalans tegen het resultaat berekend vanuit de winst-en-verliesrekening, beginsaldi tegen de eindstand van de vorige periode, en structurele controles — is er rentelast, dan moet er schuld zijn; is er omzet, dan moeten er vorderingen of vooruitbetalingen zijn.</p><p>Blokkerende fouten voorkomen dat de jaarrekeningen überhaupt worden weergegeven, en tonen u de verantwoordelijke rekeningen. Waarschuwingen worden weergegeven met een zichtbare markering. Een reconciliatiecertificaat — onderneming, periode, mappingversie, gebruiker, tijdstempel, elke controle en het resultaat ervan — is downloadbaar als PDF, en standaard opgenomen in het boardpack.</p>"}
+  ],
+  s4h2:"De analyse",
+  s4intro:"<p><strong>Vier dashboards</strong>, die elk een andere vraag beantwoorden in plaats van dezelfde grafieken tegen een andere kolom te herhalen.</p>",
+  s4dash:[
+    {eyebrow:"Performance", body:"De margeladder van omzet via productie, toegevoegde waarde, EBITDA en bedrijfsresultaat naar nettoresultaat, weergegeven als waterval; een EBITDA-brug die de beweging naar kostengroep ontleedt; kostenstructuur als aandeel van de productie; voortschrijdend twaalfmaands trendverloop met een seizoensband; en de tien grootste kostenposten met hun beweging."},
+    {eyebrow:"Werkkapitaal", body:"Debiteurentermijn, crediteurentermijn, voorraadtermijn en de cash conversion cycle in de tijd; een brug van het handelswerkkapitaal; werkkapitaal als percentage van de omzet; en, indien een ouderdomsanalyse van vorderingen wordt aangeleverd, achterstallige blootstelling en klantconcentratie."},
+    {eyebrow:"Solvabiliteit en rendement", body:"Current, quick en cash ratio; een nettoschuldbrug van begin- naar eindstand; gearing en hefboom met covenantdrempels op dezelfde as weergegeven; rentedekking; een Du Pont-ontleding van het rendement op eigen vermogen."},
+    {eyebrow:"Kasstroom", body:"Het indirecte kasstroomoverzicht als waterval, vrije kasstroom, cash conversion ten opzichte van EBITDA, investeringen ten opzichte van afschrijvingen, cash runway wanneer de onderneming cash verbrandt, en de schuldaflossingsmuur wanneer een leningenoverzicht wordt aangeleverd."}
+  ],
+  s4sub:[
+    {lbl:"Eén vergelijkingsbasis bepaalt elk scherm.", txt:"<p>In plaats van afzonderlijke dashboards voor werkelijk tegenover vorige periode, vorig jaar of budget, is er één enkele instelling bovenaan de applicatie: kies <em>vs vorige periode</em>, <em>vs vorig jaar</em>, <em>vs budget</em>, <em>vs een benoemde prognose</em>, of <em>vs voortschrijdende twaalf maanden</em>, en elke jaarrekening, tegel en brug antwoordt op die basis. Elke tegel vermeldt de basis die zij toont, zodat twee cijfers op één scherm nooit verschillende dingen kunnen vergelijken.</p>"},
+    {lbl:"Budget en prognose zijn volwaardig.", txt:"<p>Budgetten komen zelden aan in de vorm van een grootboek — het zijn vastgestelde bedragen, vaak maandelijks, vaak samengevat boven rekeningniveau tot een tiental kostencategorieën in plaats van driehonderd rekeningen. Dat alles wordt geaccepteerd, en categorieën worden gemapt naar dezelfde economische lijnen als de rekeningen, zodat budget en werkelijk elkaar op gemeenschappelijke grond ontmoeten.</p><p>Prognoses staan naast budgetten als versies — oorspronkelijk budget, eerste reforecast, tweede, laatste inschatting — en de vergelijkingsbasis noemt de versie op het rapport zelf. <em>Versus budget</em> is geen zinvolle uitspraak wanneer er drie budgetten bestaan.</p><p>Twee weigeringen die het vermelden waard zijn. Een budget uit een naburige periode wordt nooit vervangen voor een ontbrekend budget, omdat de resulterende afwijking volledig een artefact van de kalender zou zijn. En wanneer een lijn nooit is begroot, wordt het volledige werkelijke bedrag niet gerapporteerd als overschrijding — de software benoemt die lijnen in plaats daarvan, omdat een afwijking ten opzichte van niets geen afwijking is.</p>"},
+    {lbl:"Bruggen ontleden.", txt:"<p>Elke waterval-balk opent naar de economische lijnen eronder, en van daaruit naar de individuele rekeningen en de regels van de proef- en saldibalans waaruit ze afkomstig zijn. Waar een beweging niet volledig kan worden verklaard, wordt het onverklaarde deel als eigen, gelabelde balk weergegeven — nooit opgenomen in een naburige balk om de grafiek te laten sluiten.</p>"},
+    {lbl:"Covenantbewaking.", txt:"<p>Covenantbewaking bevat de definitie van elk covenant, testfrequentie, basis, drempelwaarde, huidige waarde en marge — marge eerst in valuta uitgedrukt, omdat <em>EBITDA kan met € 1,4 mln dalen voordat er een schending optreedt</em> nuttiger is dan <em>2,7 keer tegen een limiet van 3,0</em>. Definities die tussen overeenkomsten verschillen, zijn instellingen in plaats van aannames: of EBITDA wordt vermeld vóór of na niet-recurrente posten, en of leaseverplichtingen als schuld meetellen, worden per covenant gekozen, omdat een faciliteit die vóór IFRS 16 is afgesloten vaak op de oude basis wordt getoetst. Drempels die niet zijn geverifieerd aan de daadwerkelijke overeenkomst worden als ongeverifieerd weergegeven, en er wordt geen schending gerapporteerd op een cijfer dat niemand heeft gecontroleerd.</p>"}
+  ],
+  s5h2:"De geschreven briefing",
+  s5body:[
+    "<strong>Gegenereerd, maar niet verzonnen.</strong>",
+    "Eerst draait een deterministische engine: afwijkingen boven de materialiteitsgrens, verslechtering van ratio's, covenantmarge, ongebruikelijke bewegingen, mislukte controles. Deze produceert een gestructureerde verzameling feiten, elk met een identificatie. Pas daarna ziet een taalmodel deze feiten, en de enige toegestane taak ervan is te selecteren, te ordenen en te formuleren.",
+    "Elk gegenereerd cijfer wordt teruggetoetst aan die verzameling feiten voordat de briefing wordt getoond. Verschijnt er een cijfer in de tekst dat niet in de feiten voorkomt, dan wordt de briefing verworpen en opnieuw gegenereerd. Elke zin bevat een verwijzing naar de onderliggende berekening, zodat een lezer vanuit de tekst kan doorklikken naar de rekeningen.",
+    "De briefing behandelt uitsluitend wat is geüpload. Geen budget betekent geen budgetcommentaar; geen vorig jaar betekent alleen de huidige periode. Zij is beschikbaar in het Engels, Frans, Duits en Nederlands, en in een eenvoudige taalvariant naast de financiële versie.",
+    "De rest van de applicatie heeft het model helemaal niet nodig, en werkt ook wanneer het is uitgeschakeld."
+  ],
+  s6h2:"Het principe waarop het is gebouwd",
+  s6lead:"Nooit een cijfer tonen dat de data niet rechtvaardigt.",
+  s6body:[
+    "Een lege tegel met een vermelde reden is een correcte uitkomst. Een aannemelijk fout cijfer is dat niet.",
+    "In de praktijk betekent dit dat de software vaker nee zegt dan de meeste tools. Is er geen proef- en saldibalans van de vorige periode, dan is er geen kasstroomoverzicht — en de pagina vermeldt dit, met de naam van wat nodig is om het te ontgrendelen. Zonder twaalf aaneengesloten maanden is er geen voortschrijdend twaalfmaands cijfer, en wordt er niets geschat. Zonder leningenoverzicht is er geen debt service cover ratio, en wordt er geen proxy gebruikt. Waar een rekeningschema niet kan uitdrukken of een schuld binnen het jaar opeisbaar is, vraagt de software dit na in plaats van het aan te nemen.",
+    "Elke kengetal vermeldt zijn eigen basis. Een ratio die op eindsaldi in plaats van gemiddelde saldi is berekend, vermeldt dit. Een cijfer dat op een aanname berust — bijvoorbeeld een proxy voor onderhoudsinvesteringen — vermeldt welke aanname, op de tegel, naast het cijfer.",
+    "Een eerdere versie van deze software faalde om de tegenovergestelde reden: de gegevens die gebruikers uploadden, kwamen niet overeen met wat de uitkomsten veronderstelden, en niets vermeldde dit. Dat falen is de oorsprong van elke bovenstaande ontwerpbeslissing."
+  ],
+  s7h2:"Waar het staat",
+  s7body:[
+    "De financiële engine is volledig en uitgebreid getest — meer dan vijftienhonderd geautomatiseerde tests, waaronder een opzettelijk foutieve invoer voor elke controle, en identiteitstests die aantonen dat dezelfde onderneming, gevoerd op vijf verschillende nationale rekeningschema's, één nettoresultaat, één balans en één nettoschuldcijfer oplevert.",
+    "Jaarrekeningen, dashboards, budget- en prognosevergelijking, covenantbewaking, de briefing en het boardpack werken allemaal. Ondersteuning voor meerdere entiteiten, met een portefeuilleoverzicht over ondernemingen heen, is het laatste onderdeel dat nog in ontwikkeling is.",
+    "Het testen gaat door tegen echte proef- en saldibalansen, anoniem aangeleverd door operationele ondernemingen. Dat werk telt zwaarder dan om het even hoeveel synthetische tests: de eerste echte grootboeken die door het systeem liepen, vonden onmiddellijk gebreken die duizend gegenereerde bestanden niet hadden gevonden. Dit werk is voortdurend gaande, en daarom wordt dit omschreven als een werkend systeem in plaats van een afgerond product."
+  ],
+  ctaH2:"Praktische details",
+  ctaLede:"CFO Flash wordt gratis en publiekelijk beschikbaar. Het is self-hosted: het draait op uw eigen server of virtuele machine, en uw gegevens blijven daar. Het taalmodel dat voor de geschreven briefing wordt gebruikt, draait standaard lokaal en kan naar wens worden vervangen door een externe API — of volledig worden uitgeschakeld, in welk geval alles behalve de briefing blijft werken.",
+  ctaK1:"Contact", ctaK2:"Status", ctaK3:"Gebouwd door",
+  ctaStatusV:"Laatste testfase — Binnenkort beschikbaar",
+  footL:"Joseph Khaouly · CFO Flash"
+},
+
+de: {
+  metaTitle:"CFO Flash — Executive Intelligence | Über",
+  metaDesc:"CFO Flash liest eine Summen- und Saldenliste ein und erstellt abgestimmte Jahresabschlüsse, analytische Dashboards, Budget- und Forecast-Vergleiche, Covenant-Überwachung und ein schriftliches CFO-Briefing.",
+  langLabel:"Sprache",
+  backLink:"← Joseph Khaouly",
+  eyebrowL:"CFO Flash — Executive Intelligence",
+  eyebrowR:"Finale Testphase",
+  heroH1:"Niemals eine Zahl darstellen, die durch die Daten nicht gerechtfertigt ist.",
+  heroLede:"CFO Flash liest eine Summen- und Saldenliste ein und erstellt <em>abgestimmte Jahresabschlüsse</em>, analytische Dashboards, Budget- und Forecast-Vergleiche, Covenant-Überwachung und ein schriftliches CFO-Briefing.",
+  heroBody:"Sie laden die Datei hoch, die Ihre Buchhaltungssoftware bereits exportiert. Die Software ordnet die Konten zu, prüft, ob die Daten in sich stimmig sind, und erstellt eine Bilanz, eine Gewinn- und Verlustrechnung, eine Kapitalflussrechnung und einen Eigenkapitalveränderungsnachweis — im gesetzlich vorgeschriebenen Format des jeweiligen Rechnungslegungsrahmens, in der Sprache Ihrer Wahl.",
+  heroStatus:"Self-hosted · Kostenlos",
+  s1h2:"Was es ist",
+  s1body:[
+    "Es unterstützt acht Rechnungslegungsrahmen — IFRS, US GAAP, UK FRS 102 sowie die belgischen, französischen, deutschen, niederländischen und libanesischen handelsrechtlichen Modelle — und liest die nationalen Kontenrahmen hinter fünf davon: den belgischen PCMN, den französischen PCG, den deutschen SKR 04, das niederländische RGS und den libanesischen PCG-L.",
+    "Es läuft auf Ihren eigenen Servern oder einer privaten virtuellen Maschine. Es handelt sich nicht um einen gehosteten Dienst, und Ihr Hauptbuch verlässt Ihre Infrastruktur nicht."
+  ],
+  s2h2:"Der Gedanke dahinter",
+  s2body:[
+    "Die meisten Finanzabteilungen verfügen bereits über die Daten, die sie benötigen. Was fehlt, sind die zwei Tage Tabellenkalkulationsarbeit, die aus einer Summen- und Saldenliste etwas machen, das ein Aufsichtsrat, eine Bank oder ein Aktionär lesen kann — und die Gewissheit, dass das Ergebnis stimmt.",
+    "Die vorhandenen Werkzeuge tendieren zu einem von zwei Extremen. Buchhaltungssoftware erstellt handelsrechtliche Abschlüsse und hört dort auf. Business-Intelligence-Plattformen erstellen ansprechende Dashboards, aber erst, nachdem ein Berater ein semantisches Modell aufgebaut hat, und sie haben keine Meinung dazu, ob die Zahlen sich abstimmen lassen.",
+    "<strong>CFO Flash steht dazwischen: Es leistet die der Abschlusserstellung nahestehende analytische Arbeit, es tut dies anhand der Datei, die Sie bereits besitzen, und es weigert sich, Ihnen irgendetwas zu zeigen, das es nicht belegen kann.</strong>"
+  ],
+  s3h2:"Wie es funktioniert",
+  s3intro:"<p><strong>Vier getrennte Ebenen.</strong></p><p>Ihr Kontenplan bleibt unverändert. Jedes Konto wird einmalig zugeordnet — nicht zu einem Bericht, sondern zu einer rahmenneutralen wirtschaftlichen Position: Das belgische Konto 400 und das französische Konto 411 landen beide auf <em>Forderungen aus Lieferungen und Leistungen</em>, die Konten 440 und 401 beide auf <em>Verbindlichkeiten aus Lieferungen und Leistungen</em>. Es gibt etwas mehr als hundert dieser Positionen, und diese Zuordnung ist der einzige Schritt, der von Ihnen etwas verlangt.</p><p>Alles Übrige leitet sich aus dieser einen Zuordnung ab. Die Abschlüsse, die Kennzahlen, die Kapitalflussrechnung, die Dashboards und das Briefing lesen alle dieselbe kanonische Position. Und da jeder Rechnungslegungsrahmen nur eine Art ist, diese Positionen zu ordnen und zu benennen, <strong>rendert ein Wechsel des Rahmens die Abschlüsse neu, ohne die Zuordnung anzurühren</strong>. Dieselbe Datei erzeugt sowohl eine belgische handelsrechtliche Bilanz als auch eine IFRS-Bilanz, ohne jede Nacharbeit.</p>",
+  s3sub:[
+    {lbl:"Die Zuordnung erfolgt weitgehend automatisch und lernt hinzu.", txt:"<p>Regeln für jeden nationalen Kontenrahmen platzieren beim ersten Durchlauf die meisten Konten. Mehrsprachiger Abgleich der Kontenbezeichnungen übernimmt den Rest. Was die Software nicht mit Sicherheit zuordnen kann, zeigt sie Ihnen — gruppiert nach wirtschaftlicher Position und nach Betrag, sodass Sie <em>Forderungen aus Lieferungen und Leistungen, 4,2 Mio. € auf vierzehn Konten verteilt</em> prüfen, statt eine Liste von dreihundert Kontonummern zu lesen.</p><p>Nach der Freigabe wird die Zuordnung gespeichert. Der Upload des Folgemonats fragt nur noch nach neuen Konten.</p>"},
+    {lbl:"Alles stimmt überein, oder es wird nichts angezeigt.", txt:"<p>Bei jedem Upload laufen dreizehn Kontrollen: Soll gegen Haben, Aktiva gegen Eigenkapital und Verbindlichkeiten, das Ergebnis laut Summen- und Saldenliste gegen das aus der Gewinn- und Verlustrechnung berechnete Ergebnis, Eröffnungsbestände gegen den Schlussbestand der Vorperiode, sowie strukturelle Prüfungen — besteht Zinsaufwand, muss Fremdkapital vorhanden sein; besteht Umsatz, müssen Forderungen oder Anzahlungen vorhanden sein.</p><p>Blockierende Fehler verhindern die Darstellung der Abschlüsse vollständig und zeigen Ihnen die verantwortlichen Konten. Warnungen werden mit einer sichtbaren Markierung angezeigt. Ein Abstimmungszertifikat — Unternehmen, Periode, Version der Zuordnung, Benutzer, Zeitstempel, jede Kontrolle und ihr Ergebnis — ist als PDF herunterladbar und standardmäßig im Board Pack enthalten.</p>"}
+  ],
+  s4h2:"Die Analyse",
+  s4intro:"<p><strong>Vier Dashboards</strong>, die jeweils eine andere Frage beantworten, statt dieselben Diagramme gegen eine andere Spalte zu wiederholen.</p>",
+  s4dash:[
+    {eyebrow:"Ertragslage", body:"Die Margentreppe vom Umsatz über Produktion, Wertschöpfung, EBITDA und Betriebsergebnis bis zum Jahresergebnis, als Wasserfall dargestellt; eine EBITDA-Brücke, die die Bewegung nach Kostengruppe zerlegt; die Kostenstruktur als Anteil der Produktion; ein gleitender Zwölfmonatstrend mit Saisonalitätsband; und die zehn größten Kostenpositionen mit ihrer Entwicklung."},
+    {eyebrow:"Working Capital", body:"Debitorenlaufzeit, Kreditorenlaufzeit, Lagerreichweite und der Cash Conversion Cycle im Zeitverlauf; eine Brücke des betrieblichen Working Capital; Working Capital als Prozentsatz des Umsatzes; und, sofern eine Fälligkeitsliste der Forderungen vorliegt, überfällige Forderungen und Kundenkonzentration."},
+    {eyebrow:"Solvenz und Rendite", body:"Current, Quick und Cash Ratio; eine Nettoverschuldungsbrücke vom Eröffnungs- zum Schlussbestand; Gearing und Verschuldungsgrad mit Covenant-Schwellenwerten auf derselben Achse; Zinsdeckungsgrad; eine Du-Pont-Zerlegung der Eigenkapitalrendite."},
+    {eyebrow:"Liquidität", body:"Die indirekte Kapitalflussrechnung als Wasserfall, freier Cashflow, Cash Conversion im Verhältnis zum EBITDA, Investitionen im Verhältnis zu Abschreibungen, Cash Runway, wenn das Unternehmen Liquidität verbrennt, und die Fälligkeitswand der Schulden, sofern ein Darlehensregister vorliegt."}
+  ],
+  s4sub:[
+    {lbl:"Eine einzige Vergleichsbasis bestimmt jeden Bildschirm.", txt:"<p>Statt getrennter Dashboards für Ist gegen Vorperiode, Vorjahr oder Budget gibt es eine einzige Einstellung oben in der Anwendung: Wählen Sie <em>vs. Vorperiode</em>, <em>vs. Vorjahr</em>, <em>vs. Budget</em>, <em>vs. einen benannten Forecast</em> oder <em>vs. gleitende zwölf Monate</em>, und jeder Abschluss, jede Kachel und jede Brücke antwortet auf dieser Basis. Jede Kachel nennt die Basis, die sie zeigt, sodass zwei Zahlen auf einem Bildschirm niemals unterschiedliche Dinge vergleichen können.</p>"},
+    {lbl:"Budget und Forecast sind vollwertig.", txt:"<p>Budgets kommen selten in der Form eines Hauptbuchs an — es sind festgelegte Beträge, oft monatlich, oft oberhalb der Kontenebene zu einem Dutzend Kostenkategorien statt dreihundert Konten zusammengefasst. All das wird akzeptiert, und die Kategorien werden denselben wirtschaftlichen Positionen zugeordnet wie die Konten, sodass Budget und Ist auf gemeinsamem Boden zusammentreffen.</p><p>Forecasts stehen neben Budgets als Versionen — ursprüngliches Budget, erster Reforecast, zweiter, letzte Schätzung — und die Vergleichsbasis benennt die Version auf dem Bericht selbst. <em>Gegenüber Budget</em> ist keine sinnvolle Aussage, wenn drei Budgets existieren.</p><p>Zwei Verweigerungen, die man kennen sollte. Ein Budget aus einer benachbarten Periode wird niemals anstelle eines fehlenden eingesetzt, weil die daraus resultierende Abweichung vollständig ein Artefakt des Kalenders wäre. Und wo eine Position nie budgetiert wurde, wird ihr vollständiges Ist nicht als Überschreitung gemeldet — die Software benennt diese Positionen stattdessen, denn eine Abweichung gegenüber nichts ist keine Abweichung.</p>"},
+    {lbl:"Brücken werden zerlegt.", txt:"<p>Jeder Wasserfallbalken öffnet sich zu den darunterliegenden wirtschaftlichen Positionen und von dort zu den einzelnen Konten und den Zeilen der Summen- und Saldenliste, aus denen sie stammen. Kann eine Bewegung nicht vollständig erklärt werden, wird der unerklärte Teil als eigener, beschrifteter Balken dargestellt — niemals in einen benachbarten Balken aufgenommen, damit sich das Diagramm scheinbar schließt.</p>"},
+    {lbl:"Covenant-Überwachung.", txt:"<p>Die Covenant-Überwachung führt zu jedem Covenant die Definition, die Testfrequenz, die Basis, den Schwellenwert, den aktuellen Wert und den Spielraum — den Spielraum zuerst in Währung, denn <em>das EBITDA kann um 1,4 Mio. € sinken, bevor ein Verstoß eintritt</em> ist nützlicher als <em>2,7-fach gegenüber einem Limit von 3,0</em>. Definitionen, die zwischen Verträgen variieren, sind Einstellungen und keine Annahmen: Ob das EBITDA vor oder nach nicht wiederkehrenden Posten ausgewiesen wird und ob Leasingverbindlichkeiten als Fremdkapital zählen, wird je Covenant festgelegt, da eine vor IFRS 16 unterzeichnete Finanzierung häufig nach der alten Basis geprüft wird. Schwellenwerte, die nicht anhand des tatsächlichen Vertrags bestätigt wurden, werden als nicht verifiziert angezeigt, und es wird kein Verstoß gegen eine Zahl gemeldet, die niemand geprüft hat.</p>"}
+  ],
+  s5h2:"Das schriftliche Briefing",
+  s5body:[
+    "<strong>Generiert, aber nicht erfunden.</strong>",
+    "Zunächst läuft eine deterministische Engine: Abweichungen jenseits der Wesentlichkeitsgrenze, Verschlechterung von Kennzahlen, Covenant-Spielraum, ungewöhnliche Bewegungen, fehlgeschlagene Kontrollen. Sie erzeugt eine strukturierte Menge von Fakten, jeweils mit einer Kennung versehen. Erst danach sieht ein Sprachmodell diese Fakten, und seine einzige zulässige Aufgabe ist es, auszuwählen, zu ordnen und zu formulieren.",
+    "Jede generierte Zahl wird vor der Anzeige gegen diese Faktenmenge geprüft. Wenn eine Zahl im Text erscheint, die nicht in den Fakten enthalten ist, wird das Briefing verworfen und neu generiert. Jeder Satz enthält einen Verweis auf die zugrunde liegende Berechnung, sodass ein Leser vom Text direkt zu den Konten springen kann.",
+    "Das Briefing behandelt ausschließlich das, was hochgeladen wurde. Kein Budget bedeutet keine Budgetkommentierung; kein Vorjahr bedeutet nur die aktuelle Periode. Es ist auf Englisch, Französisch, Deutsch und Niederländisch verfügbar sowie in einer allgemein verständlichen Variante neben der finanziellen Version.",
+    "Der Rest der Anwendung benötigt das Modell überhaupt nicht und funktioniert auch bei deaktiviertem Modell."
+  ],
+  s6h2:"Das Prinzip, auf dem es aufgebaut ist",
+  s6lead:"Niemals eine Zahl darstellen, die durch die Daten nicht gerechtfertigt ist.",
+  s6body:[
+    "Eine leere Kachel mit einem erklärten Grund ist ein korrektes Ergebnis. Eine plausible, aber falsche Zahl ist es nicht.",
+    "In der Praxis bedeutet dies, dass die Software häufiger Nein sagt als die meisten Tools. Wenn keine Summen- und Saldenliste der Vorperiode vorhanden ist, gibt es keine Kapitalflussrechnung — und die Seite sagt dies und nennt, was erforderlich wäre, um sie freizuschalten. Ohne zwölf aufeinanderfolgende Monate gibt es keine rollierende Zwölfmonatszahl, und es wird nichts geschätzt. Ohne Darlehensregister gibt es keine Debt-Service-Coverage-Ratio, und es wird kein Proxy eingesetzt. Wenn ein Kontenplan nicht erkennen lässt, ob eine Schuld innerhalb des Jahres fällig wird, fragt die Software nach, statt eine Annahme zu treffen.",
+    "Jede Kennzahl gibt ihre eigene Basis an. Eine Kennzahl, die auf Schlussbeständen statt auf Durchschnittsbeständen berechnet wurde, weist darauf hin. Eine Zahl, die auf einer Annahme beruht — etwa einem Proxy für Erhaltungsinvestitionen — nennt diese Annahme auf der Kachel neben der Zahl.",
+    "Eine frühere Version dieser Software scheiterte aus dem entgegengesetzten Grund: Die von den Nutzern hochgeladenen Daten entsprachen nicht dem, was die Ergebnisse voraussetzten, und nichts wies darauf hin. Dieses Versagen ist der Ursprung jeder oben beschriebenen Designentscheidung."
+  ],
+  s7h2:"Wo das Produkt steht",
+  s7body:[
+    "Die Finanz-Engine ist vollständig und umfassend getestet — mehr als eintausendfünfhundert automatisierte Tests, einschließlich einer bewusst fehlerhaften Eingabe für jede Kontrolle, sowie Identitätstests, die belegen, dass dasselbe Unternehmen, geführt nach fünf verschiedenen nationalen Kontenrahmen, ein einheitliches Nettoergebnis, eine einheitliche Bilanz und einen einheitlichen Nettoschuldenbetrag erzeugt.",
+    "Abschlüsse, Dashboards, Budget- und Forecast-Vergleiche, Covenant-Überwachung, Briefing und Board Pack funktionieren. Die Unterstützung mehrerer Gesellschaften mit einer Portfolioansicht über Unternehmen hinweg ist das letzte noch in Arbeit befindliche Element.",
+    "Die Tests werden mit echten Summen- und Saldenlisten fortgesetzt, die von operativ tätigen Unternehmen anonym bereitgestellt werden. Diese Arbeit ist wichtiger als jede Menge synthetischer Tests: Die ersten echten Hauptbücher, die durch das System liefen, fanden sofort Fehler, die tausend generierte Dateien nicht gefunden hatten. Die Arbeit läuft weiter, und deshalb wird dies als funktionierendes System und nicht als fertiges Produkt beschrieben."
+  ],
+  ctaH2:"Praktische Details",
+  ctaLede:"CFO Flash wird kostenlos und öffentlich verfügbar sein. Es ist self-hosted: Es läuft auf Ihrem eigenen Server oder Ihrer eigenen virtuellen Maschine, und Ihre Daten bleiben dort. Das für das schriftliche Briefing verwendete Sprachmodell läuft standardmäßig lokal und kann bei Bedarf durch eine externe API ersetzt oder vollständig deaktiviert werden — in diesem Fall funktioniert alles außer dem Briefing weiterhin.",
+  ctaK1:"Kontakt", ctaK2:"Status", ctaK3:"Entwickelt von",
+  ctaStatusV:"Finale Testphase — Demnächst verfügbar",
+  footL:"Joseph Khaouly · CFO Flash"
+}
+
+};
+
+function render(lang){
+  const t = I18N[lang] || I18N.en;
+  document.getElementById('htmlRoot').lang = lang;
+  document.getElementById('metaTitle').textContent = t.metaTitle;
+  document.title = t.metaTitle;
+  document.getElementById('metaDesc').setAttribute('content', t.metaDesc);
+  document.getElementById('ogTitle').setAttribute('content', t.metaTitle);
+  document.getElementById('ogDesc').setAttribute('content', t.metaDesc);
+  document.getElementById('twTitle').setAttribute('content', t.metaTitle);
+  document.getElementById('twDesc').setAttribute('content', t.metaDesc);
+  document.getElementById('langLabel').textContent = t.langLabel;
+  document.getElementById('backLink').textContent = t.backLink;
+  document.getElementById('heroEyebrowL').textContent = t.eyebrowL;
+  document.getElementById('heroEyebrowR').textContent = t.eyebrowR;
+  document.getElementById('heroH1').textContent = t.heroH1;
+  document.getElementById('heroLede').innerHTML = t.heroLede;
+  document.getElementById('heroBody').textContent = t.heroBody;
+  document.getElementById('heroStatus').textContent = t.heroStatus;
+
+  document.getElementById('s1h2').textContent = t.s1h2;
+  document.getElementById('s1body').innerHTML = t.s1body.map(p=>`<p>${p}</p>`).join('');
+  document.getElementById('s2h2').textContent = t.s2h2;
+  document.getElementById('s2body').innerHTML = t.s2body.map(p=>`<p>${p}</p>`).join('');
+
+  document.getElementById('s3h2').textContent = t.s3h2;
+  document.getElementById('s3intro').innerHTML = t.s3intro;
+  document.getElementById('s3sub').innerHTML = t.s3sub.map(b=>`
+    <div class="subhead"><div class="lbl">${b.lbl}</div><div class="txt">${b.txt}</div></div>`).join('');
+
+  document.getElementById('s4h2').textContent = t.s4h2;
+  document.getElementById('s4intro').innerHTML = t.s4intro;
+  document.getElementById('s4dash').innerHTML = t.s4dash.map(d=>`
+    <div class="mini-card"><span class="eyebrow">${d.eyebrow}</span><h4>${d.eyebrow}</h4><p>${d.body}</p></div>`).join('');
+  document.getElementById('s4sub').innerHTML = t.s4sub.map(b=>`
+    <div class="subhead"><div class="lbl">${b.lbl}</div><div class="txt">${b.txt}</div></div>`).join('');
+
+  document.getElementById('s5h2').textContent = t.s5h2;
+  document.getElementById('s5body').innerHTML = t.s5body.map(p=>`<p>${p}</p>`).join('');
+
+  document.getElementById('s6h2').textContent = t.s6h2;
+  document.getElementById('s6lead').textContent = t.s6lead;
+  document.getElementById('s6body').innerHTML = t.s6body.map(p=>`<p>${p}</p>`).join('');
+
+  document.getElementById('s7h2').textContent = t.s7h2;
+  document.getElementById('s7body').innerHTML = t.s7body.map(p=>`<p>${p}</p>`).join('');
+
+  document.getElementById('ctaEyebrow').textContent = t.eyebrowL;
+  document.getElementById('ctaH2').textContent = t.ctaH2;
+  document.getElementById('ctaLede').textContent = t.ctaLede;
+  document.getElementById('ctaK1').textContent = t.ctaK1;
+  document.getElementById('ctaK2').textContent = t.ctaK2;
+  document.getElementById('ctaK3').textContent = t.ctaK3;
+  document.getElementById('ctaStatusV').textContent = t.ctaStatusV;
+  document.getElementById('footL').innerHTML = `&copy; <span id="yr">${new Date().getFullYear()}</span> ${t.footL}`;
+
+  const canonical = {
+    en:"https://www.josephkhaouly.com/cfo/about",
+    fr:"https://www.josephkhaouly.com/cfo/about?lang=fr",
+    nl:"https://www.josephkhaouly.com/cfo/about?lang=nl",
+    de:"https://www.josephkhaouly.com/cfo/about?lang=de"
+  };
+  document.getElementById('canonicalLink').setAttribute('href', canonical[lang] || canonical.en);
+  document.getElementById('ogUrl').setAttribute('content', canonical[lang] || canonical.en);
+}
+
+const langSelect = document.getElementById('langSelect');
+const params = new URLSearchParams(location.search);
+const urlLang = params.get('lang');
+const savedLang = (() => { try { return localStorage.getItem('cfoLang'); } catch(e){ return null; } })();
+const initialLang = (urlLang && I18N[urlLang]) ? urlLang : ((savedLang && I18N[savedLang]) ? savedLang : 'en');
+
+langSelect.value = initialLang;
+render(initialLang);
+
+langSelect.addEventListener('change', () => {
+  const lang = langSelect.value;
+  try { localStorage.setItem('cfoLang', lang); } catch(e){}
+  render(lang);
+});
+</script>
+</body>
+</html>
