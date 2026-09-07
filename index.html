@@ -375,6 +375,7 @@ section{position:relative}
       <a href="#about">About</a>
       <a href="#track">Track record</a>
       <a href="#ventures">AI Lab</a>
+      <a href="#speaking">Speaking</a>
       <a href="#roadmap">Roadmap</a>
       <a href="#cv">CV</a>
       <a href="#contact" class="nav-cta">Contact</a>
@@ -452,10 +453,21 @@ section{position:relative}
   <div class="proj-grid reveal" id="proj-list"></div>
 </section>
 
+<!-- ═════════ SPEAKING & WRITING ═════════ -->
+<section class="sec wrap" id="speaking">
+  <div class="sec-head reveal">
+    <span class="sec-idx">V</span>
+    <div><h2 class="sec-title">Speaking &amp; writing</h2>
+    <p class="sec-sub">Where the thinking shows up beyond the build — talks, panels and articles on AI-driven finance and decision-support.</p></div>
+  </div>
+  <div class="track reveal" id="speak-list"></div>
+  <div class="track reveal" id="write-list" style="margin-top:44px"></div>
+</section>
+
 <!-- ═════════ ROADMAP ═════════ -->
 <section class="sec wrap" id="roadmap">
   <div class="sec-head reveal">
-    <span class="sec-idx">V</span>
+    <span class="sec-idx">VI</span>
     <div><h2 class="sec-title">Roadmap</h2>
     <p class="sec-sub">Where the work is heading next — research and ventures in build.</p></div>
   </div>
@@ -465,7 +477,7 @@ section{position:relative}
 <!-- ═════════ CV & CREDENTIALS ═════════ -->
 <section class="sec wrap" id="cv">
   <div class="sec-head reveal">
-    <span class="sec-idx">VI</span>
+    <span class="sec-idx">VII</span>
     <div><h2 class="sec-title">CV &amp; credentials</h2>
     <p class="sec-sub">A quick-scan of education and capability. Full detail in the downloadable executive dossier.</p></div>
   </div>
@@ -593,6 +605,16 @@ const SITE = {
      ], cta:"Final testing phase"}
   ],
 
+  speaking:[
+    {when:"Sep 2026", role:"Speaker — Session 8: Legal Tech, Innovation & the Future of Law Firms", org:"World Lawyers Forum · 25th Edition, Europe · Amsterdam", detail:"Panel discussion on AI-driven innovation, transformation and the adoption of AI within professional-services organisations.", url:"https://worldlawyersforum.org/wlf-2026-litigation-europe/joseph-khaouly/"}
+  ],
+
+  writing:[
+    {when:"Aug 2026", title:"Four AI Platforms. One Business Application. My Lessons Learned.", teaser:"Choosing the right AI: Lessons learnt from building a real business application - A hands on comparison .", url:"https://www.linkedin.com/pulse/four-ai-platforms-one-business-application-my-lessons-joseph-khaouly-jhhhe/"},
+    {when:"Jan 2026", title:"AI Literacy Is the New Financial Literacy: The Skill Every Leader Needs", teaser:"Why understanding AI — its data, its assumptions, its limits — is becoming as essential for leaders as reading a balance sheet.", url:"https://www.linkedin.com/pulse/ai-literacy-new-financial-skill-every-leader-needs-joseph-khaouly-njnpe/"},
+    {when:"Nov 2025", title:"AI-Powered M&A: The Next Frontier in Deal Sourcing, Valuation & Due Diligence", teaser:"Where AI is already reshaping deal sourcing, valuation and due diligence — and where human judgment still decides the outcome.", url:"https://www.linkedin.com/pulse/ai-powered-ma-next-frontier-deal-sourcing-valuation-due-khaouly-3iknf/"}
+  ],
+
   roadmap:[
     {q:"Now", title:"AI-finance advisory", stage:"Formalising",
      text:"A standing advisory practice for companies strategizing about AI across finance and operations in diversified markets."},
@@ -685,6 +707,22 @@ $("#proj-list").innerHTML=SITE.projects.map(p=>{
       ${p.infoUrl?`<a class="card-link" href="${p.infoUrl}" target="_blank" rel="noopener">More information <span class="arw">↗</span></a>`:''}
     </div>
   </article>`;}).join('');
+
+// speaking
+$("#speak-list").innerHTML=SITE.speaking.map(r=>`
+  <div class="row">
+    <div class="when">${r.when}</div>
+    <div class="what"><h4>${r.role}</h4><div class="org">${r.org}</div><p>${r.detail}</p></div>
+    ${r.url&&r.url!=='#'?`<a class="place" href="${r.url}" target="_blank" rel="noopener">More information ↗</a>`:`<div class="place">${r.place||''}</div>`}
+  </div>`).join('');
+
+// writing
+$("#write-list").innerHTML=SITE.writing.map(w=>`
+  <div class="row">
+    <div class="when">${w.when}</div>
+    <div class="what"><h4>${w.title}</h4><div class="org">LinkedIn Article</div><p>${w.teaser}</p></div>
+    ${w.url&&w.url!=='#'?`<a class="place" href="${w.url}" target="_blank" rel="noopener">Read ↗</a>`:`<span class="place" style="opacity:.5">Link pending</span>`}
+  </div>`).join('');
 
 // roadmap
 $("#road-list").innerHTML=SITE.roadmap.map(r=>`
